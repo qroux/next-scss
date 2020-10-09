@@ -1,0 +1,44 @@
+@import "./page";
+@import "./variables";
+
+.home {
+  @include viewContainer;
+  display: flex;
+  //   justify-content: center;
+  //   border: 1px solid white;
+
+  .textContainer {
+    // border: 1px solid red;
+    padding: 0 10rem;
+    z-index: 100;
+
+    & > * {
+      margin: 5rem 0;
+    }
+  }
+
+  .buttons {
+    // border: 1px solid red;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 15vh;
+
+    &__item {
+      height: 10rem;
+      border: 10px solid white;
+      border-radius: 5px;
+      width: 25rem;
+      //   padding: 0 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      z-index: 101;
+
+      &Title {
+        font-size: 3rem;
+        font-weight: 600;
+      }
+    }
+  }
+}

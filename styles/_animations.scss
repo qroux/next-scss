@@ -1,0 +1,30 @@
+@keyframes particules {
+  0% {
+    transform: translateY(0) rotate(0deg) scale(1);
+    opacity: 1;
+    border-radius: 3px;
+  }
+
+  50% {
+    transform: translateY(-500px) rotate(100deg) scale(1);
+    border-radius: 3px;
+  }
+
+  100% {
+    transform: translateY(-1000px) rotate(200deg) scale(2);
+    opacity: 0;
+    border-radius: 3px;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

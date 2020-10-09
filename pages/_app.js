@@ -2,6 +2,8 @@ import Head from "next/head";
 import "../styles/global.scss";
 import styles from "../styles/Layout.module.scss";
 
+import Navbar from "../components/Navbar";
+
 function MyApp({ Component, pageProps }) {
   return (
     <>
@@ -9,16 +11,31 @@ function MyApp({ Component, pageProps }) {
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
       <div className={styles.layout}>
-        <div className={styles.navbar}>
-          <div className={styles.navbar__item}>1</div>
-          <div className={styles.navbar__item}>2</div>
-          <div className={styles.navbar__item}>3</div>
+        <Navbar />
+        <div className={styles.items}>
+          <div className={styles.items__item}></div>
+          <div className={styles.items__item}></div>
+          <div className={styles.items__item}></div>
+          <div className={styles.items__item}></div>
+          <div className={styles.items__item}></div>
+          <div className={styles.items__item}></div>
+          <div className={styles.items__item}></div>
+          <div className={styles.items__item}></div>
+          <div className={styles.items__item}></div>
+          <div className={styles.items__item}></div>
         </div>
-        <Component {...pageProps} />
+        <div className={styles.fullpage}>
+          <Component {...pageProps} />
+        </div>
       </div>
     </>
   );
 }
 
 export default MyApp;
+
+// computer = "<div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+// programming = Icons made by <a href="https://icon54.com/" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+// let contrib = "<a href=https://iconscout.com/icons/ethereum" target="_blank">Ethereum Icon</a> by <a href="https://iconscout.com/contributors/icon-mafia">Icon Mafia</a> on <a href="https://iconscout.com">Iconscout</a>"
