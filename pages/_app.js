@@ -14,18 +14,6 @@ function MyApp({ Component, pageProps }) {
 
       <div className={styles.layout}>
         <Navbar />
-        <div className={styles.items}>
-          <div className={styles.items__item}></div>
-          <div className={styles.items__item}></div>
-          <div className={styles.items__item}></div>
-          <div className={styles.items__item}></div>
-          <div className={styles.items__item}></div>
-          <div className={styles.items__item}></div>
-          <div className={styles.items__item}></div>
-          <div className={styles.items__item}></div>
-          <div className={styles.items__item}></div>
-          <div className={styles.items__item}></div>
-        </div>
         <div className={styles.fullpage}>
           <Component {...pageProps} />
         </div>

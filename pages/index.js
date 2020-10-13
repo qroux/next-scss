@@ -25,11 +25,17 @@ export default function index() {
         <div className={styles.home}>
             <div className={styles.textContainer}>
                 <h1>Quentin Roux</h1>
-                <h1>Developpeur FullStack</h1>
-                <div className={styles.buttons}>
-                    {renderButtons}                    
+                <div className={styles.text}>
+                    <h1 className={styles.textCrossed}>Juriste</h1>
+                    <h1 className={styles.textRegular}>Développeur FullStack</h1>
                 </div>
+
             </div>
+            <div className={styles.cards}>
+
+
+            </div>
+
         </div> 
 
     )
