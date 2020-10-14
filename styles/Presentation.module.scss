@@ -1,88 +1,97 @@
 @import "./page";
 @import "./variables";
+@import "./animations";
 
-.presentation {
-  @include viewContainer;
-  display: flex;
-  justify-content: center;
-
-  &__container {
-    max-width: 1000px;
-    min-height: 80vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  &__stick {
-    height: 50rem;
-    width: 3px;
-    background-color: white;
-    margin-right: 5.5rem;
-  }
-
-  &__title {
-    font-weight: 700;
-    padding-bottom: $gutter-vertical;
-    border-bottom: 2px solid white;
-
-    .titleCrossed {
-      font-weight: 300;
-      text-decoration: line-through;
-    }
-    .titleBold {
-      margin-left: 2rem;
-    }
-  }
-
-  &__questions {
-    margin-top: $gutter-vertical;
-  }
-
-  &__question {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding: $gutter-vertical 0;
-    opacity: 0;
-    animation: fadeInUp 1s ease-in-out 0s forwards;
-
-    &ImgContainer {
-      // background-color: white;
-      border-radius: 3px;
-      padding: 1rem;
-    }
-
-    &Img {
-      width: 100px;
-    }
-
-    &TextContainer {
-      margin-left: 5rem;
-    }
-
-    &Title {
-      margin-bottom: $gutter-vertical-min;
-    }
-
-    &:nth-child(1) {
-    }
-    &:nth-child(2) {
-      animation-delay: 1s;
-    }
-    &:nth-child(3) {
-      animation-delay: 2s;
-    }
-  }
+.presentationLayout {
+  background-color: red;
 }
 
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(-2rem);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.presentationContainer {
+  @include Container;
 }
+
+// .presentation {
+//   @include viewContainer;
+//   display: flex;
+//   justify-content: center;
+
+//   &__container {
+//     max-width: 1000px;
+//     min-height: 80vh;
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//   }
+
+//   &__stick {
+//     height: 50rem;
+//     width: 3px;
+//     background-color: white;
+//     margin-right: 5.5rem;
+//   }
+
+//   &__title {
+//     font-weight: 700;
+//     padding-bottom: $gutter-vertical;
+//     border-bottom: 2px solid white;
+
+//     .titleCrossed {
+//       font-weight: 300;
+//       text-decoration: line-through;
+//     }
+//     .titleBold {
+//       margin-left: 2rem;
+//     }
+//   }
+
+//   &__questions {
+//     margin-top: $gutter-vertical;
+//   }
+
+//   &__question {
+//     display: flex;
+//     justify-content: flex-start;
+//     align-items: center;
+//     padding: $gutter-vertical 0;
+//     opacity: 0;
+//     animation: fadeInUp 1s ease-in-out 0s forwards;
+
+//     &ImgContainer {
+//       // background-color: white;
+//       border-radius: 3px;
+//       padding: 1rem;
+//     }
+
+//     &Img {
+//       width: 100px;
+//     }
+
+//     &TextContainer {
+//       margin-left: 5rem;
+//     }
+
+//     &Title {
+//       margin-bottom: $gutter-vertical-min;
+//     }
+
+//     &:nth-child(1) {
+//     }
+//     &:nth-child(2) {
+//       animation-delay: 1s;
+//     }
+//     &:nth-child(3) {
+//       animation-delay: 2s;
+//     }
+//   }
+// }
+
+// @keyframes fadeInUp {
+//   from {
+//     opacity: 0;
+//     transform: translateY(-2rem);
+//   }
+//   to {
+//     opacity: 1;
+//     transform: translateY(0);
+//   }
+// }

@@ -3,6 +3,7 @@ import "../styles/global.scss";
 import styles from "../styles/Layout.module.scss";
 
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -17,6 +18,7 @@ function MyApp({ Component, pageProps }) {
         <div className={styles.fullpage}>
           <Component {...pageProps} />
         </div>
+        <Footer />
       </div>
     </>
   );

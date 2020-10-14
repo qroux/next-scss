@@ -13,13 +13,14 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: Montserrat, serif;
   font-size: 1.6rem;
-  color: $text-dark;
-  background-color: $text-light;
+  color: $primary-dark;
+  background-color: $bg-light;
   // background-image: linear-gradient(
   //   to bottom left,
   //   rgb(107, 214, 247),
@@ -29,9 +30,9 @@ body {
   // background-repeat: no-repeat;
 
   h1 {
-    font-size: 10rem;
+    font-size: 8rem;
     font-weight: 600;
-    line-height: 14rem;
+    line-height: 12rem;
   }
   h2 {
     font-size: 3rem;

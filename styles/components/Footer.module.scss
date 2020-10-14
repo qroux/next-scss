@@ -1,0 +1,60 @@
+@import "../variables";
+@import "../animations";
+@import "../page";
+
+// <div className={styles.footerLayout}>
+// <div className={styles.footerContainer}>
+//     <h3 className={styles.footer__heading}>
+//         Contacts
+//     </h3>
+//     <div className={styles.logos}>
+//         {renderLogos}
+//     </div>
+// </div>
+// </div>
+
+.footerLayout {
+  background-color: $primary-dark;
+  color: $text-light;
+}
+
+.footerContainer {
+  @include Container;
+  text-align: center;
+
+  padding: 2rem 0;
+}
+
+.footer__heading {
+  font-weight: 600;
+}
+
+.logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 0;
+}
+
+.logoBox {
+  height: 8rem;
+  width: 8rem;
+  margin: 0 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  cursor: pointer;
+  background-color: rgba($bg-light, 0.2);
+
+  transition: background-color 0.5s;
+
+  &:hover {
+    background-color: rgba($bg-light, 0.7);
+  }
+}
+
+.logo {
+  height: 4rem;
+  width: 4rem;
+}
