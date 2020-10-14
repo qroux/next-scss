@@ -3,11 +3,48 @@
 @import "./animations";
 
 .presentationLayout {
-  background-color: red;
 }
 
 .presentationContainer {
   @include Container;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+
+  min-height: 91vh;
+}
+
+.presentation {
+  &__heading {
+    padding: 5vh 0;
+
+    &Italic {
+      font-family: serif;
+      font-style: italic;
+    }
+  }
+
+  &__questions {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    // padding: 0 15rem;
+  }
+
+  &__question {
+    display: flex;
+    justify-self: space-between;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-bottom: 5rem;
+    }
+
+    &Logo {
+      height: 10rem;
+      margin-right: 5rem;
+    }
+  }
 }
 
 // .presentation {

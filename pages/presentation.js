@@ -1,37 +1,47 @@
 import Link from "next/link"
 import styles from "../styles/Presentation.module.scss";
 
+import EthSvg from "../public/ethereum-2.svg";
+import Coding from "../public/coding.svg";
+import WebDev from "../public/web-dev-2.svg";
 
 
-// const questions = [
-//   {
-//     title: "Pourquoi",
-//     logo: EthSvg,
-//     content:
-//       "Juriste de formation, je suis finalement tombé dans la  programmation en cherchant à coder des smartcontracts sur  blockchain ethereum.",
-//   },
-//   {
-//     title: "Comment",
-//     logo: Coding,
-//     content:
-//       "Après une période de découverte en autodidacte, j'ai fini par suivre une formation de développeur Fullstack au Wagon Marseille (batch #212).",
-//   },
-//   {
-//     title: "Maintenant",
-//     logo: WebDev,
-//     content:
-//       "Je développe en langage Javascript et Ruby ( Backend/Frontend ).",
-//   },
-// ];
 
-// const renderQuestions = questions.map((question) => {
-//   return (
-//     <div className={styles.presentation__question}>
-//       <h3 className={styles.presentation__questionTitle}>{question.title}</h3>
-//       <p className={styles.presentation__questionText}>{question.content}</p>
-//     </div>
-//   );
-// });
+const questions = [
+  {
+    title: "Pourquoi",
+    logo: EthSvg,
+    content:
+      "Juriste de formation, je suis finalement tombé dans la  programmation en cherchant à coder des smartcontracts sur  blockchain ethereum.",
+  },
+  {
+    title: "Comment",
+    logo: Coding,
+    content:
+      "Après une période de découverte en autodidacte, j'ai fini par suivre une formation de développeur Fullstack au Wagon Marseille (batch #212).",
+  },
+  {
+    title: "Maintenant",
+    logo: WebDev,
+    content:
+      "Je développe en langage Javascript et Ruby ( Backend/Frontend ).",
+  },
+];
+
+const renderQuestions = questions.map((question) => {
+  return (
+    <div className={styles.presentation__question}>
+    
+        <img src={question.logo} alt="logo" className={styles.presentation__questionLogo}/>
+   
+      <div className={styles.presentation__questionContent}>
+        <h3 className={styles.presentation__questionTitle}>{question.title}</h3>
+        <p className={styles.presentation__questionText}>{question.content}</p>
+      </div>
+
+    </div>
+  );
+});
 
 
 
@@ -39,7 +49,12 @@ export default function presentation() {
   return (
     <div className={styles.presentationLayout}>
       <div className={styles.presentationContainer}>
-        <h1>Presentation Page</h1>
+        <h1 className={styles.presentation__heading}>Presentation - <span className={styles.presentation__headingItalic}>"Code is Law"</span></h1>
+
+        <div className={styles.presentation__questions}>
+          {renderQuestions}
+
+        </div>
       </div>
     </div> 
   )
