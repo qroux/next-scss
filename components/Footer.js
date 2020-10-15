@@ -24,7 +24,7 @@ const renderLogos = (logos).map(logo => {
 
 export default function Footer() {
     return (
-        <div className={styles.footerLayout}>
+        <div className={styles.footerLayout} id="contacts">
             <div className={styles.footerContainer}>
                 <h3 className={styles.footer__heading}>
                     Contacts

@@ -115,8 +115,15 @@
   }
 
   &__logoBox {
-    // border: 5px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100%;
+  }
+
+  &__logo {
+    height: 20rem;
+    width: 20rem;
   }
 
   &__text {

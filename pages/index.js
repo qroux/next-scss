@@ -3,8 +3,8 @@ import styles from "../styles/Homepage.module.scss";
 
 const cards = [
     {title: "Présentation", path: "/presentation", description: "Du droit à la programmation"},   
-    {title: "Skills", path: "/skills", description: "Prestations et Langages"},
-    {title: "Portfolio", path: "/portfolio", description: "Du droit à la programmation"},
+    {title: "Languages", path: "/languages", description: "Prestations et Langages"},
+    // {title: "Portfolio", path: "/portfolio", description: "Du droit à la programmation"},
 ]
 
 const renderCards = (cards).map(card => {
@@ -65,23 +65,24 @@ export default function index() {
                             {cards[1].description}
                         </p> */}
                         <div className={styles.card__logoBox}>
+                            <img src="/javascript.svg" alt="javascript logo" className={styles.card__logo}/>
                            
 
                         </div>
                     </div>
                 </Link>
-                <Link href={cards[2].path}>
+                {/* <Link href={cards[2].path}>
                     <div className={styles.card}>
                         <h3 className={styles.card__heading}>{cards[2].title}</h3>
-                        {/* <p className={styles.card__text}>
+                         <p className={styles.card__text}>
                             {cards[2].description}
-                        </p> */}
+                        </p> 
                             <div className={styles.card__logoBox}>
                            
 
                            </div>
                     </div>
-                </Link>
+                </Link> */}
 
 
                 </div>   
