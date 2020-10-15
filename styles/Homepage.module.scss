@@ -35,7 +35,7 @@
         top: 50%;
         left: 0;
         width: 0;
-        height: 9px;
+        height: 1.1rem;
         background-color: #0152a9;
         transition: all 0.5s;
         animation: crossed 2s forwards 1s;
@@ -92,10 +92,14 @@
   align-items: center;
 
   padding: 10rem 0;
+
+  @include respond(small-phone) {
+    flex-direction: column;
+  }
 }
 
 .card {
-  border: 1px solid aquamarine;
+  // border: 1px solid aquamarine;
   background-color: $bg-light;
   width: 20%;
   height: 30rem;
@@ -107,6 +111,12 @@
   flex-direction: column;
   justify-content: space-around;
   padding: 5rem;
+
+  @include respond(small-phone) {
+    width: 60%;
+    max-width: 50rem;
+    margin-bottom: 10rem;
+  }
 
   &:hover {
     transform: translateY(-0.5rem);
