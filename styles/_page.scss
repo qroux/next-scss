@@ -1,9 +1,30 @@
+// breakpoint argument list:
+// - smallest
+// - small-phone
+// - phone
+// - tab-port
+// - tab-land
+// - big-desktop
+
 @mixin Container {
   margin-right: auto;
   margin-left: auto;
   // border: 1px solid red;
-  max-width: 90%;
+  max-width: 75%;
 
-  @media (min-width: 1200px) {
+  @include respond(tab-land) {
+    max-width: 75%;
+  }
+  @include respond(tab-port) {
+    max-width: 75%;
+  }
+  @include respond(phone) {
+    max-width: 75%;
+  }
+  @include respond(small-phone) {
+    max-width: 85%;
+  }
+  @include respond(smallest) {
+    max-width: 90%;
   }
 }

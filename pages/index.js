@@ -35,11 +35,10 @@ export default function index() {
                         <h1 className={styles.text__negativ}>Développeur Fullstack</h1>
                     </section>
 
-                     {/* <section className={styles.card__}>
-                       
-                            <img src="/react-logo.svg" alt="react logo" className={styles.reactLogo}/>
-                     
-                    </section> */}
+                      <section className={styles.logoBox}>                       
+                            <img src="/uranus.svg" alt="planet logo" className={styles.reactLogo}/>
+                            <div className={styles.reactShadow}></div>
+                      </section> 
                 </div>
             </div>
 
