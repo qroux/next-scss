@@ -2,9 +2,9 @@ import Link from "next/link"
 import styles from "../styles/Homepage.module.scss";
 
 const cards = [
-    {title: "Présentation", path: "/presentation"},   
-    {title: "Skills", path: "/skills"},
-    {title: "Portfolio", path: "/portfolio"},
+    {title: "Présentation", path: "/presentation", description: "Du droit à la programmation"},   
+    {title: "Skills", path: "/skills", description: "Prestations et Langages"},
+    {title: "Portfolio", path: "/portfolio", description: "Du droit à la programmation"},
 ]
 
 const renderCards = (cards).map(card => {
@@ -13,7 +13,7 @@ const renderCards = (cards).map(card => {
             <div className={styles.card}>
                 <h3 className={styles.card__heading}>{card.title}</h3>
                 <p className={styles.card__text}>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt accusamus nemo quis dignissimos doloremque ex iusto.
+                    {card.description}
                 </p>
             </div>
         </Link>
@@ -35,7 +35,7 @@ export default function index() {
                         <h1 className={styles.text__negativ}>Développeur Fullstack</h1>
                     </section>
 
-                     {/* <section className={styles.logoBox}>
+                     {/* <section className={styles.card__}>
                        
                             <img src="/react-logo.svg" alt="react logo" className={styles.reactLogo}/>
                      
@@ -45,7 +45,43 @@ export default function index() {
 
             <div className={styles.cardsLayout}>
                 <div className={styles.cardsContainer} id="cardSection">
-                {renderCards}
+                {/* {renderCards} */}
+                <Link href={cards[0].path}>
+                    <div className={styles.card}>
+                        <h3 className={styles.card__heading}>{cards[0].title}</h3>
+                        {/* <p className={styles.card__text}>
+                            {cards[0].description}
+                        </p> */}
+                        <div className={styles.card__logoBox}>
+                           
+
+                        </div>
+                    </div>
+                </Link>
+                <Link href={cards[1].path}>
+                    <div className={styles.card}>
+                        <h3 className={styles.card__heading}>{cards[1].title}</h3>
+                        {/* <p className={styles.card__text}>
+                            {cards[1].description}
+                        </p> */}
+                        <div className={styles.card__logoBox}>
+                           
+
+                        </div>
+                    </div>
+                </Link>
+                <Link href={cards[2].path}>
+                    <div className={styles.card}>
+                        <h3 className={styles.card__heading}>{cards[2].title}</h3>
+                        {/* <p className={styles.card__text}>
+                            {cards[2].description}
+                        </p> */}
+                            <div className={styles.card__logoBox}>
+                           
+
+                           </div>
+                    </div>
+                </Link>
 
 
                 </div>   

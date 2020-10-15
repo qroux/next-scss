@@ -2,6 +2,11 @@
 @import "./variables";
 @import "./animations";
 
+// <div className={styles.presentation__headingBox}>
+// <h1 className={styles.presentation__heading}><span className={styles.presentation__headingItalic}>"Code is Law"</span></h1>
+// <h2 className={styles.presentation__sub}>Du droit à la programmation</h2>
+// </div>
+
 .presentationLayout {
 }
 
@@ -16,12 +21,18 @@
 
 .presentation {
   &__heading {
-    padding: 5vh 0;
+    &Box {
+      padding: 12rem 0;
+    }
 
     &Italic {
       font-family: serif;
       font-style: italic;
     }
+  }
+  &__sub {
+    margin-left: 5rem;
+    margin-top: 1rem;
   }
 
   &__questions {
@@ -36,17 +47,49 @@
     justify-self: space-between;
     align-items: center;
 
-    &:not(:last-child) {
-      margin-bottom: 5rem;
+    margin-bottom: 8rem;
+
+    &Title {
+      margin-bottom: 2rem;
     }
 
     &Logo {
-      height: 10rem;
-      margin-right: 5rem;
+      height: 13rem;
+      margin-left: 2rem;
+      margin-right: 7rem;
+      mask-mode: alpha;
+      mask-repeat: no-repeat;
+      -webkit-mask-size: contain;
+      mask-size: cover;
+
+      &First {
+        -webkit-mask-image: url(../public/ethereum-2.svg);
+        mask-image: url(../public/ethereum-2.svg);
+      }
+
+      &Second {
+        -webkit-mask-image: url(../public/lewagon.png);
+        mask-image: url(../public/lewagon.png);
+      }
+
+      &Third {
+        -webkit-mask-image: url(../public/blockchain.svg);
+        mask-image: url(../public/blockchain.svg);
+      }
     }
   }
 }
 
+// #first {
+
+// }
+
+// #second {
+//   mask-image: url(../public/lewagon.png);
+// }
+// #third {
+//   mask-image: url(../public/lewagon.png);
+// }
 // .presentation {
 //   @include viewContainer;
 //   display: flex;

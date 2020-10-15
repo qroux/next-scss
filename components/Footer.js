@@ -31,11 +31,11 @@ export default function Footer() {
                 </h3>             
                 <div className={styles.logos}>
                     {renderLogos}
-                    <a onClick={e => copyToClipboard(e)}>
-                        <div onClick={copyToClipboard} className={styles.logoBox}>
-                            <img src="/email.svg" alt="email logo" className={styles.logo}/>
+                    
+                        <div onClick={copyToClipboard} className={styles.logoBox} title="Cliquer pour copier l'Email">
+                            <img src="/email.svg" alt="email logo"  className={styles.logo}/>
                         </div>
-                    </a>  
+                  
                 </div> 
                 <div>
                     <p>Fait avec NextJS + Sass</p>
