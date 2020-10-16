@@ -45,7 +45,7 @@ export default function Presentation() {
     <div className={styles.presentation__layout}>
         <div className={styles.presentation__container}>
             <div className={styles.presentation__header}>
-                <h2 className={styles.presentation__heading}>I - Du Droit à la Programmation</h2>
+                <h2 className={styles.presentation__heading}>Du Droit à la Programmation</h2>
             </div>
             <div className={styles.presentation__content}>
             
