@@ -10,12 +10,18 @@ export default function Navbar() {
         </Link>
       </div>
       <div className={styles.navbar__left}>
-        <Link href="/presentation">
+        {/* <Link href="/presentation">
           <div className={styles.navbar__item}>Présentation</div>
         </Link>
         <Link href="/languages">
           <div className={styles.navbar__item}>Languages</div>
-        </Link>
+        </Link> */}
+        <a href="#presentation" className={styles.navbar__item}>
+          presentation
+        </a>  
+        <a href="#skills" className={styles.navbar__item}>
+          Compétences
+        </a>  
         <a href="#contacts" className={styles.navbar__item}>
           Contacts
         </a>     
