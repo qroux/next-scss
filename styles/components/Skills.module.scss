@@ -1,0 +1,76 @@
+@import "../variables";
+@import "../animations";
+@import "../page";
+
+.skills {
+  &__layout {
+    background-color: $bg-light;
+  }
+
+  &__container {
+    @include Container;
+    padding: 15rem 0;
+  }
+
+  &__header {
+    margin-bottom: 10rem;
+  }
+
+  &__heading {
+  }
+
+  &__cards {
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // flex-direction: column;
+  }
+
+  &__card {
+    box-shadow: 0 1rem 2rem rgba(black, 0.1);
+    border-radius: 3px;
+    padding: 5rem 2.5rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &:not(:last-of-type) {
+      margin-bottom: 5rem;
+    }
+
+    @include respond(big-desktop) {
+      //   width: 40vw;
+      //   max-width: 40vw;
+    }
+
+    &Main {
+      //   background-color: salmon;
+      flex: 0.15;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &Image {
+        height: 10rem;
+        width: 10rem;
+      }
+    }
+    &Stack {
+      flex: 0.75;
+      border-left: 1px solid $text-dark;
+
+      display: flex;
+
+      align-items: center;
+      padding-left: 5rem;
+
+      &Image {
+        height: 7rem;
+        width: 7rem;
+        margin-right: 5rem;
+      }
+    }
+  }
+}

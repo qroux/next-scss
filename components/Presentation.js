@@ -1,4 +1,4 @@
-import Link from "next/link";
+
 import styles from "../styles/components/Presentation.module.scss";
 
 import EthSvg from "../public/ethereum-2.svg";
@@ -47,16 +47,11 @@ export default function Presentation() {
             <div className={styles.presentation__header}>
                 <h2 className={styles.presentation__heading}>Du Droit à la Programmation</h2>
             </div>
-            <div className={styles.presentation__content}>
-            
-                <img src="/ethereum-2.svg" alt="ethereum-2 logo" className={styles.presentation__contentImage}/>
-
-               
+            <div className={styles.presentation__content}>            
+                <img src="/ethereum-2.svg" alt="ethereum-2 logo" className={styles.presentation__contentImage}/>               
                 <div className={styles.presentation__contentText}>
                     {renderText}
                 </div>
-
-
             </div>
         </div>
     </div>
