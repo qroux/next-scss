@@ -26,6 +26,7 @@
   .reactLogo {
     position: absolute;
     bottom: 25%;
+    // right: 15%;
     height: 30rem;
     width: 30rem;
     animation: float 15s infinite 7s;
@@ -33,14 +34,15 @@
   }
 
   .reactShadow {
-    background-color: rgba(black, 0.05);
+    background-color: rgba(0, 0, 0, 0.3);
     height: 1.5vw;
-    width: 10vw;
+    width: 8vw;
     border-radius: 100%;
     position: absolute;
     bottom: 20%;
     right: 0;
     margin: 0 auto;
+    // transform: scale(1.2);
 
     animation: shadow 15s infinite 7s;
 
@@ -73,7 +75,7 @@
         left: 0;
         width: 0;
         height: 1.1rem;
-        background-color: #0152a9;
+        background-color: $primary-dark;
         transition: all 0.5s;
         animation: crossed 2s forwards 1s;
       }
@@ -99,7 +101,7 @@
 }
 
 .cardsLayout {
-  background-color: $primary-dark;
+  background-color: $primary-darkest;
   // color: $text-light;
 }
 
