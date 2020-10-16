@@ -1,0 +1,66 @@
+@import "../variables";
+@import "../animations";
+@import "../page";
+
+.presentation {
+  &__layout {
+    // background-color: $lime;
+    color: $text-dark;
+    // box-shadow: 0 1rem 2rem rgba(black, 0.1);
+  }
+
+  &__container {
+    @include Container;
+    // min-height: 50vh;
+    padding: 15rem 0;
+  }
+
+  &__header {
+  }
+
+  &__heading {
+    margin-bottom: 5rem;
+  }
+
+  &__content {
+    // border: 5px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 30vh;
+
+    @include respond(phone) {
+      flex-direction: column;
+    }
+
+    &Text {
+      flex: 0.75;
+
+      .question__heading {
+        margin-bottom: 0.5rem;
+      }
+    }
+    &Image {
+      flex: 0.15;
+      // border: 1px solid blue;
+      display: flex;
+      //   justify-content: center;
+      align-items: center;
+
+      @include respond(phone) {
+        width: 25rem;
+        height: 25rem;
+        margin: 5rem 0;
+      }
+    }
+  }
+}
+
+.questionBox {
+  //   margin: 0rem 0;
+  padding: 3rem 1rem;
+}
+.questionBox:last-of-type {
+  border: 0.7rem solid $primary-darkest;
+  border-radius: 3px;
+}

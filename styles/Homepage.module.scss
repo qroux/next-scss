@@ -101,7 +101,7 @@
 }
 
 .cardsLayout {
-  background-color: $primary-darkest;
+  // background-image: linear-gradient(to bottom, $bg-light, $primary-darkest);
   // color: $text-light;
 }
 
@@ -109,7 +109,7 @@
   @include Container;
 
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
 
   padding: 10rem 0;
@@ -121,7 +121,8 @@
 
 .card {
   // border: 1px solid aquamarine;
-  background-color: $bg-light;
+  background-color: white;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.05);
   width: 20%;
   height: 30rem;
   border-radius: 3px;
@@ -155,8 +156,9 @@
   }
 
   &__logo {
-    height: 20rem;
-    width: 20rem;
+    height: 15rem;
+    width: 15rem;
+    border-radius: 3%;
   }
 
   &__text {
