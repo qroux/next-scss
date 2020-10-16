@@ -17,7 +17,7 @@ export default function Navbar() {
           <div className={styles.navbar__item}>Languages</div>
         </Link> */}
         <a href="#presentation" className={styles.navbar__item}>
-          presentation
+          Presentation
         </a>  
         <a href="#skills" className={styles.navbar__item}>
           Compétences
