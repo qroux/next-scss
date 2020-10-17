@@ -151,14 +151,14 @@
 @keyframes shadow {
   0% {
     transform: scale(1);
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.2);
   }
   50% {
     transform: scale(0.5);
-    background-color: rgba(0, 0, 0, 0.05);
+    background-color: rgba(0, 0, 0, 0.01);
   }
   100% {
     transform: scale(1);
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.2);
   }
 }
