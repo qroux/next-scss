@@ -9,7 +9,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>Create Next App</title>
+        <title>Quentin Roux | Portfolio</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

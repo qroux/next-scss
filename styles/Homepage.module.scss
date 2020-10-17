@@ -87,9 +87,8 @@
 
     &__negativ {
       color: transparent;
-      background-image: url("https://images.unsplash.com/photo-1510021115607-c94b84bceb1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2616&q=80");
+      background-image: url("../public/blue.jpg");
       background-clip: text;
-      background-size: cover;
       background-position: bottom;
       -webkit-text-stroke: 1px rgba(0, 0, 0, 0.301);
       filter: contrast(0.7);
@@ -101,8 +100,6 @@
 }
 
 .cardsLayout {
-  // background-image: linear-gradient(to bottom, $bg-light, $primary-darkest);
-  // color: $text-light;
 }
 
 .cardsContainer {
