@@ -19,7 +19,7 @@ html {
     font-size: 50%; //1rem = 12px, 12/16 * 100
   }
   @include respond(small-desktop) {
-    font-size: 40%; //1rem = 12px, 12/16 * 100
+    font-size: 35%; //1rem = 12px, 12/16 * 100
   }
   @include respond(tab-land) {
     font-size: 40%; // 1rem = 9px, 9/16 * 100

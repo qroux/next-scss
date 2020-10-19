@@ -1,4 +1,3 @@
-
 import styles from "../styles/components/Presentation.module.scss";
 
 import EthSvg from "../public/ethereum-2.svg";

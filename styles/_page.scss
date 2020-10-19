@@ -13,12 +13,13 @@
   max-width: 75%;
   // overflow: hidden;
 
-  @include respond(big-desktop) {
-    max-width: 50%;
-  }
   @include respond(small-desktop) {
     max-width: 65%;
   }
+  @include respond(big-desktop) {
+    max-width: 50%;
+  }
+
   @include respond(tab-land) {
     max-width: 75%;
   }

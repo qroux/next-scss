@@ -2,6 +2,7 @@ import Link from "next/link"
 import styles from "../styles/Homepage.module.scss";
 import Presentation from '../components/Presentation'
 import Skills from '../components/Skills'
+import Portfolio from '../components/Portfolio'
 
 const cards = [
     {title: "Présentation", path: "/presentation", description: "Du droit à la programmation"},   
@@ -50,6 +51,9 @@ export default function index() {
             <section id="skills">
                 <Skills />                
             </section>
+            {/* <section id="portfolio">
+                <Portfolio />                
+            </section> */}
 
  
 

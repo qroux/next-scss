@@ -1,0 +1,14 @@
+@import "../variables";
+@import "../animations";
+@import "../page";
+
+.portfolio {
+  &__layout {
+    background-color: $bg-light-2;
+  }
+
+  &__container {
+    @include Container;
+    padding: 15rem 0;
+  }
+}
