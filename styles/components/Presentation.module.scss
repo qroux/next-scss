@@ -28,7 +28,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 30vh;
 
     @include respond(phone) {
       flex-direction: column;
