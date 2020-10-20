@@ -12,21 +12,25 @@ const questions = [
       title: "Pourquoi",
       logo: EthSvg,
       content:
-        "Juriste de formation, je suis finalement tombé dans la  programmation en cherchant à coder des smartcontracts sur  blockchain ethereum.",
+        "Juriste de formation, je suis finalement tombé dans la  programmation en cherchant à ",
+        span: "coder des smartcontracts sur  blockchain ethereum."
     },
     {
       id: "second",
       title: "Comment",
       logo: LeWagon,
       content:
-        "Après une période de découverte en autodidacte, j'ai fini par suivre une formation de développeur Fullstack au Wagon Marseille (batch #212).",
+        "Après une période de découverte en autodidacte, j'ai fini par suivre une ",
+        span: "formation de développeur Fullstack au Wagon Marseille (batch #212)."
     },
     {
       id: "third",
       title: "Maintenant",
       logo: WebDev,
       content:
-        "Je développe en langage Javascript et Ruby (Backend/Frontend).",
+        "Je développe en langage ",
+        span: "Javascript et Ruby (Backend/Frontend)."
+        
     },
   ];
 
@@ -34,7 +38,7 @@ const questions = [
       return (
           <div className={styles.questionBox}>
             <h3 className={styles.question__heading}>{question.title}</h3>
-            <p>{question.content}</p>
+            <p>{question.content} <span className={styles.question__span}>{question.span}</span></p>
           </div>  
       )
   })
@@ -47,10 +51,11 @@ export default function Presentation() {
                 <h2 className={styles.presentation__heading}>Du Droit à la Programmation</h2>
             </div>
             <div className={styles.presentation__content}>            
-                <img src="/ethereum-2.svg" alt="ethereum-2 logo" className={styles.presentation__contentImage}/>               
                 <div className={styles.presentation__contentText}>
                     {renderText}
                 </div>
+                <img src="/ethereum-2.svg" alt="ethereum-2 logo" className={styles.presentation__contentImage}/>               
+
             </div>
         </div>
     </div>
