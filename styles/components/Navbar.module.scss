@@ -1,6 +1,6 @@
-@import "../variables";
-@import "../animations";
-@import "../page";
+@import '../variables';
+@import '../animations';
+@import '../page';
 
 .navbar {
   @include Container;
@@ -13,7 +13,7 @@
   justify-content: space-between;
   align-items: center;
 
-  animation: fadeIn 2s forwards 9s;
+  animation: fadeIn 2s forwards 7s;
 
   &__right {
     display: flex;

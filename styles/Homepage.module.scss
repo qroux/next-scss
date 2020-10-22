@@ -1,6 +1,6 @@
-@import "./page";
-@import "./variables";
-@import "./animations";
+@import './page';
+@import './variables';
+@import './animations';
 
 .homePage {
   background-color: $bg-light;
@@ -44,7 +44,7 @@
     margin: 0 auto;
     // transform: scale(1.2);
 
-    animation: shadow 15s infinite 7s;
+    animation: shadow 20s infinite 8s;
 
     z-index: 1;
   }
@@ -58,7 +58,7 @@
     flex: 0.6;
     height: calc(100vh - 10rem);
 
-    animation: shrink 3s forwards 5s;
+    animation: shrink 2s forwards 5s;
   }
 
   .text {
@@ -69,7 +69,7 @@
       position: relative;
 
       &::before {
-        content: "";
+        content: '';
         position: absolute;
         top: 50%;
         left: 0;
@@ -87,7 +87,7 @@
 
     &__negativ {
       color: transparent;
-      background-image: url("../public/blue.jpg");
+      background-image: url('../public/blue.jpg');
       background-clip: text;
       background-position: bottom;
       -webkit-text-stroke: 1px rgba(0, 0, 0, 0.301);
