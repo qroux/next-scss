@@ -1,6 +1,6 @@
-@import "../variables";
-@import "../animations";
-@import "../page";
+@import '../variables';
+@import '../animations';
+@import '../page';
 
 .portfolio {
   &__layout {
@@ -10,5 +10,79 @@
   &__container {
     @include Container;
     padding: 15rem 0;
+  }
+}
+
+.heading {
+}
+
+.rows {
+  //border: 5px solid red;
+  padding: 10rem 0;
+}
+
+.row {
+  //border: 1px solid black;
+  margin-bottom: 5rem;
+
+  &__heading {
+    margin-bottom: 5rem;
+  }
+
+  &__content {
+    // border: 1px solid red;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+}
+
+.item {
+  width: 32%;
+  min-width: 50rem;
+  overflow: hidden;
+  background-color: white;
+  border-radius: 3px;
+  margin-bottom: 5rem;
+  box-shadow: 0 1rem 2rem rgba(black, 0.2);
+  transition: all 0.5s;
+
+  &__photo {
+    width: 100%;
+  }
+
+  &__description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 3rem;
+  }
+
+  &__main {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    height: 5.5rem;
+    width: auto;
+    margin-right: 3rem;
+  }
+
+  &__heading {
+    margin: 5rem 0;
+    display: inline-block;
+  }
+
+  &__github {
+    width: 3.8rem;
+  }
+
+  &__link {
+    transition: all 0.5s;
+
+    &:hover {
+      color: $primary-dark;
+    }
   }
 }

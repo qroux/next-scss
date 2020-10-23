@@ -51,9 +51,9 @@ export default function index() {
             <section id="skills">
                 <Skills />                
             </section>
-            {/* <section id="portfolio">
+            <section id="portfolio">
                 <Portfolio />                
-            </section> */}
+            </section>
 
  
 
