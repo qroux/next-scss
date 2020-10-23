@@ -5,7 +5,7 @@ import styles from "../styles/components/Portfolio.module.scss";
 const jsProjects = [
     { lang: "Javascript", repo: "https://github.com/qroux/react-streaming", path: "https://react-stream-client.herokuapp.com/", title: "Twitch Copy", image: "/portfolio/cursed-twitch.png", tech: "/react.svg"},
     { repo: "https://github.com/qroux/nuxt-cabinet", path: "https://dr-roux-gilbert.chirurgiens-dentistes.fr/", title: "Cabinet Dentaire", image: "/portfolio/nuxt-cabinet.png", tech: "/vue.svg"},
-    { repo: "https://github.com/qroux/DigitalOcean_Ticketing", path: "https://ticketswapping.xyz/", title: "Microservices", image: "/portfolio/ticketswapping.png", tech: "/typescript.svg"},
+    { repo: "https://github.com/qroux/DigitalOcean_Ticketing", path: "https://www.ticketswapping.xyz/", title: "Microservices", image: "/portfolio/ticketswapping.png", tech: "/typescript.svg"},
 
     // { repo: "https://github.com/qroux/kickstart", path: "https://kickstarter-copy.herokuapp.com/", title: "Blockchain", image: "/portfolio/kickstarter.png", tech: "/eth.svg"},
 ]
