@@ -47,6 +47,11 @@
   box-shadow: 0 1rem 2rem rgba(black, 0.2);
   transition: all 0.5s;
 
+  @include respond(tab-port) {
+    width: 50%;
+    min-width: 70rem;
+  }
+
   &__photo {
     width: 100%;
   }
