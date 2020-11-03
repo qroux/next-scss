@@ -30,9 +30,9 @@
     max-width: 75%;
   }
   @include respond(small-phone) {
-    max-width: 85%;
+    max-width: 93%;
   }
   @include respond(smallest) {
-    max-width: 90%;
+    max-width: 93%;
   }
 }

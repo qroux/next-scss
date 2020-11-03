@@ -59,6 +59,10 @@ body {
   h2 {
     font-size: 5rem;
     font-weight: 600;
+    color: $text-light;
+    padding: 2.5rem 1rem;
+    background-color: $primary-darkest;
+    border-radius: 3px;
   }
   h3 {
     font-size: 4rem;

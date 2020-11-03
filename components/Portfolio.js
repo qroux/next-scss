@@ -3,7 +3,7 @@ import styles from "../styles/components/Portfolio.module.scss";
 
 
 const jsProjects = [
-    { lang: "Javascript", repo: "https://github.com/qroux/react-streaming", path: "https://react-stream-client.herokuapp.com/", title: "Twitch Copy", image: "/portfolio/cursed-twitch.png", tech: "/react.svg"},
+    { lang: "Javascript", repo: "https://github.com/qroux/react-streaming", path: "https://react-stream-client.herokuapp.com/", title: "Twitch Copy", image: "/portfolio/cursed-twitch.png", tech: "/react.svg", header_logo: "/javascript.svg"},
     { repo: "https://github.com/qroux/nuxt-cabinet", path: "https://dr-roux-gilbert.chirurgiens-dentistes.fr/", title: "Cabinet Dentaire", image: "/portfolio/nuxt-cabinet.png", tech: "/vue.svg"},
     { repo: "https://github.com/qroux/DigitalOcean_Ticketing", path: "https://www.ticketswapping.xyz/", title: "Microservices", image: "/portfolio/ticketswapping.png", tech: "/typescript.svg"},
 
@@ -12,7 +12,7 @@ const jsProjects = [
 
 
 const rubyProjects = [
-    { lang: "Ruby", repo: "https://github.com/qroux/NOTICE-DROIT", path: "https://www.notice-droit.fr/", title: "notice-droit.fr", image: "/portfolio/notice.png", tech: "rails.svg"},
+    { lang: "Ruby", repo: "https://github.com/qroux/NOTICE-DROIT", path: "https://www.notice-droit.fr/", title: "notice-droit.fr", image: "/portfolio/notice.png", tech: "/rails.svg", header_logo: "/ruby.svg"},
     { repo: "https://github.com/qroux/trust-test", path: "https://trustpair-test.herokuapp.com/",title: "Open Data", image: "/portfolio/trust.png", tech: "/rails.svg"},
     { repo: "https://github.com/qroux/sinatra-test", path: "https://skello-sinatra.herokuapp.com/",title: "Sinatra Blog", image: "/portfolio/skello.png", tech: "/sinatra.svg"},
 ]
@@ -20,7 +20,7 @@ const rubyProjects = [
 const renderProjects = (projects) => {
     return (
         <div className={styles.row}>
-            <h3 className={styles.row__heading}>{projects[0].lang} </h3>
+            <h3 className={styles.row__heading}><img src={projects[0].header_logo} alt={projects[0].header_logo} className={styles.row__heading__img}/> {projects[0].lang}</h3>
             <div className={styles.row__content}>
                 {projects.map((project) => (
                    
