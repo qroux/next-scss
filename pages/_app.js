@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <title>Quentin Roux | Portfolio</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon2.ico" />
         <meta name="description" content="Quentin Roux - Développeur Fullstack Javascript/React/Vue et RubyOnRails - Paris/Marseille" />
       </Head>
 
