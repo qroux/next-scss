@@ -1,6 +1,6 @@
-@import "../variables";
-@import "../animations";
-@import "../page";
+@import '../variables';
+@import '../animations';
+@import '../page';
 
 // <div className={styles.footerLayout}>
 // <div className={styles.footerContainer}>
@@ -57,4 +57,19 @@
 .logo {
   height: 4rem;
   width: 4rem;
+}
+
+.copyPrompt {
+  position: sticky;
+  top: 16rem;
+  margin-left: 46%;
+
+  background-color: $bg-light;
+  color: $text-dark;
+  display: inline-block;
+  // max-width: 50rem;
+  padding: 4rem 2rem;
+  border-radius: 3px;
+
+  opacity: 1;
 }

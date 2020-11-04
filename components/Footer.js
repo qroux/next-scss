@@ -25,6 +25,9 @@ const renderLogos = (logos).map(logo => {
 export default function Footer() {
     return (
         <div className={styles.footerLayout} id="contacts">
+            <div className={styles.copyPrompt}>
+                <p>Email copié !</p>
+            </div> 
             <div className={styles.footerContainer}>
                 <h3 className={styles.footer__heading}>
                     Contacts
@@ -39,7 +42,8 @@ export default function Footer() {
                 </div> 
                 <div>
                     <p>Fait avec NextJS + Sass</p>
-                </div>           
+                </div>
+         
             </div>
         </div> 
     )

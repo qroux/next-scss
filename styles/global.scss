@@ -63,6 +63,16 @@ body {
     padding: 2.5rem 1rem;
     background-color: $primary-darkest;
     border-radius: 3px;
+
+    @include respond(phone) {
+      text-align: center;
+    }
+    @include respond(small-phone) {
+      text-align: center;
+    }
+    @include respond(smallest) {
+      text-align: center;
+    }
   }
   h3 {
     font-size: 4rem;
