@@ -24,13 +24,15 @@ const renderProjects = (projects) => {
             <div className={styles.row__content}>
                 {projects.map((project) => (
                    
-                        <div className={styles.item}>
+                        <div className={styles.item} key={project.title}>
                             <img className={styles.item__photo} src={project.image} alt={project.image}/>
-                            <a className={styles.item__link} href={project.path} target="_blank">
+                            
                                 <div className={styles.item__description}>
                                     <div className={styles.item__main}>
                                         <img src={project.tech} alt={project.tech} className={styles.item__logo}/>
-                                        <h5 className={styles.item__heading}>{project.title}</h5>
+                                        <a className={styles.item__link} href={project.path} target="_blank">
+                                            <h5 className={styles.item__heading}>{project.title}</h5>
+                                        </a>
                                     </div>
                                     <a href={project.repo} target="_blank">
                                         <img src="/github.svg" alt="github.svg" className={styles.item__github}/>
@@ -38,7 +40,7 @@ const renderProjects = (projects) => {
 
 
                                 </div>
-                            </a>                        
+                                                 
                         </div>                    
                 ))}
             </div>

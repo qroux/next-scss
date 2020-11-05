@@ -32,7 +32,7 @@ const sections = [
 
 const renderSections = sections.map(section => {
     return (
-        <section className={styles.section__container}>
+        <section className={styles.section__container} key={section.title}>
         <h3 className={styles.section__header}>{section.title}</h3>
         
         <div className={styles.section__content}>
@@ -42,7 +42,7 @@ const renderSections = sections.map(section => {
             <div className={styles.section__contentImages}>
                 {section.images.map(image => {
                     return (
-                        <img src={image} alt={image} className={styles.section__contentImages__item}/>
+                        <img src={image} alt={image} className={styles.section__contentImages__item} key={image}/>
                     )
                 })}              
             </div>

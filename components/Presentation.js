@@ -36,7 +36,7 @@ const questions = [
 
   const renderText = questions.map(question => {
       return (
-          <div className={styles.questionBox}>
+          <div className={styles.questionBox} key={question.title}>
             <h3 className={styles.question__heading}>{question.title}</h3>
             <p>{question.content} <span className={styles.question__span}>{question.span}</span></p>
           </div>  

@@ -16,6 +16,7 @@
 .footerLayout {
   background-color: $primary-darkest;
   color: $text-light;
+  position: relative;
 }
 
 .footerContainer {
@@ -60,16 +61,22 @@
 }
 
 .copyPrompt {
-  position: sticky;
-  top: 16rem;
-  margin-left: 46%;
+  position: absolute;
+  top: 5rem;
+  right: 5rem;
 
-  background-color: $bg-light;
-  color: $text-dark;
+  background-color: $bg-dark-1;
+  color: $text-light;
   display: inline-block;
   // max-width: 50rem;
-  padding: 4rem 2rem;
+  padding: 2rem 2rem;
   border-radius: 3px;
 
-  opacity: 1;
+  opacity: 0;
+
+  p {
+    font-weight: 600;
+  }
+
+  // animation: fadeOut 5s forwards;
 }

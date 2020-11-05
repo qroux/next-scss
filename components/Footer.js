@@ -1,9 +1,23 @@
 import styles from "../styles/components/Footer.module.scss";
 
 
+
 const copyToClipboard = () => {
-    navigator.clipboard.writeText("quentin.roux@hotmail.fr")  
+    navigator.clipboard.writeText("quentin.roux@hotmail.fr")
+
+    const el = document.getElementById("copyPrompt")
+    el.style.opacity = 1
+
+    setTimeout(function () {
+        el.style.opacity = 0
+    }, 2000)
 }
+
+// const copyPromptReset = () => {
+//     const div = document.getElementsByClassName("copyPrompt")
+//     div.style.webkitAnimation = 'fadeOut';
+//     console.log("it works,", div)
+// }
 
 const logos = [
     {title: "Github", logo: "/github.svg" ,path: "https://github.com/qroux"},
@@ -22,11 +36,13 @@ const renderLogos = (logos).map(logo => {
     )
 })
 
+
+
 export default function Footer() {
     return (
         <div className={styles.footerLayout} id="contacts">
-            <div className={styles.copyPrompt}>
-                <p>Email copié !</p>
+            <div className={styles.copyPrompt} id="copyPrompt">
+                <p>Email copié</p>
             </div> 
             <div className={styles.footerContainer}>
                 <h3 className={styles.footer__heading}>
