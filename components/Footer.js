@@ -6,10 +6,10 @@ const copyToClipboard = () => {
     navigator.clipboard.writeText("quentin.roux@hotmail.fr")
 
     const el = document.getElementById("copyPrompt")
-    el.style.opacity = 1
+
 
     setTimeout(function () {
-        el.style.opacity = 0
+        el.setAttribute('class', 'promptFadeOut');
     }, 2000)
 }
 
