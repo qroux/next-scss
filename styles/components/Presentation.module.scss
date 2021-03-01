@@ -1,6 +1,6 @@
-@import "../variables";
-@import "../animations";
-@import "../page";
+@import '../variables';
+@import '../animations';
+@import '../page';
 
 .presentation {
   &__layout {
@@ -47,6 +47,7 @@
     }
     &Image {
       flex: 0.15;
+      width: 15%;
       // border: 1px solid blue;
       display: flex;
       justify-content: flex-end;
