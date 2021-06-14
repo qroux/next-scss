@@ -23,15 +23,15 @@
     max-height: 20vw;
   }
 
-  .reactLogo {
-    position: absolute;
-    bottom: 25%;
-    // right: 15%;
-    height: 30rem;
-    width: 30rem;
-    animation: float 15s infinite 7s;
-    z-index: 2;
-  }
+  // .reactLogo {
+  //   position: absolute;
+  //   bottom: 25%;
+  //   // right: 15%;
+  //   height: 30rem;
+  //   width: 30rem;
+  //   animation: float 15s infinite 7s;
+  //   z-index: 2;
+  // }
 
   .reactShadow {
     background-color: rgba(0, 0, 0, 0.2);
@@ -42,9 +42,10 @@
     bottom: 20%;
     right: 0;
     margin: 0 auto;
-    // transform: scale(1.2);
 
-    animation: shadow 15s infinite 8s;
+    animation-name: shadow;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
 
     z-index: 1;
   }

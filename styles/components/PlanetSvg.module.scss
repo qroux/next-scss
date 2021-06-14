@@ -1,0 +1,62 @@
+@import '../variables';
+@import '../animations';
+@import '../page';
+
+#planet {
+  animation-name: float;
+  animation-duration: 8s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+#frontMoons {
+  animation-name: bounce;
+  animation-duration: 8s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+#backMoons {
+  animation-name: bounce;
+  animation-duration: 8s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+#shadow {
+  animation-name: fade;
+  animation-duration: 8s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes float {
+  from {
+    transform: translate3d(0);
+  }
+  to {
+    transform: translate3d(0, 100px, 0);
+  }
+}
+
+@keyframes bounce {
+  from {
+    transform: translate3d(0);
+  }
+  to {
+    transform: translate3d(0, 50px, 0);
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
