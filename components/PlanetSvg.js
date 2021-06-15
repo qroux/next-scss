@@ -3,9 +3,9 @@ import styles from '../styles/components/PlanetSvg.module.scss';
 export const PlanetSvg = () => {
   return (
     <svg
-      width='567'
-      height='596'
-      viewBox='0 0 1500 1500'
+      height='250'
+      width='100%'
+      viewBox='0 0 600 600'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'>
       <g id='uranus2'>
@@ -122,9 +122,9 @@ export const PlanetSvg = () => {
           x2='141.073'
           y2='97.6543'
           gradientUnits='userSpaceOnUse'>
-          <stop stop-color='#EAF6FF' />
-          <stop offset='0.5213' stop-color='#D8ECFE' />
-          <stop offset='1' stop-color='#B3DAFE' />
+          <stop stopColor='#EAF6FF' />
+          <stop offset='0.5213' stopColor='#D8ECFE' />
+          <stop offset='1' stopColor='#B3DAFE' />
         </linearGradient>
         <linearGradient
           id='paint1_linear'
@@ -133,9 +133,9 @@ export const PlanetSvg = () => {
           x2='116.866'
           y2='101.204'
           gradientUnits='userSpaceOnUse'>
-          <stop stop-color='#EAF6FF' />
-          <stop offset='0.5213' stop-color='#D8ECFE' />
-          <stop offset='1' stop-color='#B3DAFE' />
+          <stop stopColor='#EAF6FF' />
+          <stop offset='0.5213' stopColor='#D8ECFE' />
+          <stop offset='1' stopColor='#B3DAFE' />
         </linearGradient>
         <linearGradient
           id='paint2_linear'
@@ -144,9 +144,9 @@ export const PlanetSvg = () => {
           x2='435.83'
           y2='26.1561'
           gradientUnits='userSpaceOnUse'>
-          <stop stop-color='#EAF6FF' />
-          <stop offset='0.5213' stop-color='#D8ECFE' />
-          <stop offset='1' stop-color='#B3DAFE' />
+          <stop stopColor='#EAF6FF' />
+          <stop offset='0.5213' stopColor='#D8ECFE' />
+          <stop offset='1' stopColor='#B3DAFE' />
         </linearGradient>
         <linearGradient
           id='paint3_linear'
@@ -155,9 +155,9 @@ export const PlanetSvg = () => {
           x2='475.762'
           y2='243.001'
           gradientUnits='userSpaceOnUse'>
-          <stop stop-color='#60B7FF' />
-          <stop offset='0.5857' stop-color='#0182FC' />
-          <stop offset='1' stop-color='#2740B0' />
+          <stop stopColor='#60B7FF' />
+          <stop offset='0.5857' stopColor='#0182FC' />
+          <stop offset='1' stopColor='#2740B0' />
         </linearGradient>
         <linearGradient
           id='paint4_linear'
@@ -166,9 +166,9 @@ export const PlanetSvg = () => {
           x2='456.133'
           y2='175.665'
           gradientUnits='userSpaceOnUse'>
-          <stop stop-color='#60B7FF' />
-          <stop offset='0.5857' stop-color='#0182FC' />
-          <stop offset='1' stop-color='#2740B0' />
+          <stop stopColor='#60B7FF' />
+          <stop offset='0.5857' stopColor='#0182FC' />
+          <stop offset='1' stopColor='#2740B0' />
         </linearGradient>
         <linearGradient
           id='paint5_linear'
@@ -177,9 +177,9 @@ export const PlanetSvg = () => {
           x2='456.133'
           y2='279.297'
           gradientUnits='userSpaceOnUse'>
-          <stop stop-color='#60B7FF' />
-          <stop offset='0.5857' stop-color='#0182FC' />
-          <stop offset='1' stop-color='#2740B0' />
+          <stop stopColor='#60B7FF' />
+          <stop offset='0.5857' stopColor='#0182FC' />
+          <stop offset='1' stopColor='#2740B0' />
         </linearGradient>
         <linearGradient
           id='paint6_linear'
@@ -188,9 +188,9 @@ export const PlanetSvg = () => {
           x2='456.133'
           y2='72.9114'
           gradientUnits='userSpaceOnUse'>
-          <stop stop-color='#60B7FF' />
-          <stop offset='0.5857' stop-color='#0182FC' />
-          <stop offset='1' stop-color='#2740B0' />
+          <stop stopColor='#60B7FF' />
+          <stop offset='0.5857' stopColor='#0182FC' />
+          <stop offset='1' stopColor='#2740B0' />
         </linearGradient>
         <linearGradient
           id='paint7_linear'
@@ -199,9 +199,9 @@ export const PlanetSvg = () => {
           x2='456.13'
           y2='243.001'
           gradientUnits='userSpaceOnUse'>
-          <stop stop-color='#60B7FF' />
-          <stop offset='0.5857' stop-color='#0182FC' />
-          <stop offset='1' stop-color='#2740B0' />
+          <stop stopColor='#60B7FF' />
+          <stop offset='0.5857' stopColor='#0182FC' />
+          <stop offset='1' stopColor='#2740B0' />
         </linearGradient>
         <linearGradient
           id='paint8_linear'
@@ -210,9 +210,9 @@ export const PlanetSvg = () => {
           x2='596.33'
           y2='243.003'
           gradientUnits='userSpaceOnUse'>
-          <stop stop-color='#EAF6FF' />
-          <stop offset='0.5213' stop-color='#D8ECFE' />
-          <stop offset='1' stop-color='#B3DAFE' />
+          <stop stopColor='#EAF6FF' />
+          <stop offset='0.5213' stopColor='#D8ECFE' />
+          <stop offset='1' stopColor='#B3DAFE' />
         </linearGradient>
         <linearGradient
           id='paint9_linear'
@@ -221,9 +221,9 @@ export const PlanetSvg = () => {
           x2='385.612'
           y2='243.003'
           gradientUnits='userSpaceOnUse'>
-          <stop stop-color='#EAF6FF' />
-          <stop offset='0.5213' stop-color='#D8ECFE' />
-          <stop offset='1' stop-color='#B3DAFE' />
+          <stop stopColor='#EAF6FF' />
+          <stop offset='0.5213' stopColor='#D8ECFE' />
+          <stop offset='1' stopColor='#B3DAFE' />
         </linearGradient>
         <linearGradient
           id='paint10_linear'
@@ -232,9 +232,9 @@ export const PlanetSvg = () => {
           x2='89.7354'
           y2='309.4'
           gradientUnits='userSpaceOnUse'>
-          <stop stop-color='#EAF6FF' />
-          <stop offset='0.5213' stop-color='#D8ECFE' />
-          <stop offset='1' stop-color='#B3DAFE' />
+          <stop stopColor='#EAF6FF' />
+          <stop offset='0.5213' stopColor='#D8ECFE' />
+          <stop offset='1' stopColor='#B3DAFE' />
         </linearGradient>
         <linearGradient
           id='paint11_linear'
@@ -243,9 +243,9 @@ export const PlanetSvg = () => {
           x2='512'
           y2='442.003'
           gradientUnits='userSpaceOnUse'>
-          <stop stop-color='#EAF6FF' />
-          <stop offset='0.5213' stop-color='#D8ECFE' />
-          <stop offset='1' stop-color='#B3DAFE' />
+          <stop stopColor='#EAF6FF' />
+          <stop offset='0.5213' stopColor='#D8ECFE' />
+          <stop offset='1' stopColor='#B3DAFE' />
         </linearGradient>
         <linearGradient
           id='paint12_linear'
@@ -254,9 +254,9 @@ export const PlanetSvg = () => {
           x2='467.915'
           y2='442.003'
           gradientUnits='userSpaceOnUse'>
-          <stop stop-color='#EAF6FF' />
-          <stop offset='0.5213' stop-color='#D8ECFE' />
-          <stop offset='1' stop-color='#B3DAFE' />
+          <stop stopColor='#EAF6FF' />
+          <stop offset='0.5213' stopColor='#D8ECFE' />
+          <stop offset='1' stopColor='#B3DAFE' />
         </linearGradient>
         <linearGradient
           id='paint13_linear'
@@ -265,9 +265,9 @@ export const PlanetSvg = () => {
           x2='467.915'
           y2='440.471'
           gradientUnits='userSpaceOnUse'>
-          <stop stop-color='#EAF6FF' />
-          <stop offset='0.5213' stop-color='#D8ECFE' />
-          <stop offset='1' stop-color='#B3DAFE' />
+          <stop stopColor='#EAF6FF' />
+          <stop offset='0.5213' stopColor='#D8ECFE' />
+          <stop offset='1' stopColor='#B3DAFE' />
         </linearGradient>
         <linearGradient
           id='paint14_linear'
@@ -276,9 +276,9 @@ export const PlanetSvg = () => {
           x2='467.915'
           y2='410.855'
           gradientUnits='userSpaceOnUse'>
-          <stop stop-color='#EAF6FF' />
-          <stop offset='0.5213' stop-color='#D8ECFE' />
-          <stop offset='1' stop-color='#B3DAFE' />
+          <stop stopColor='#EAF6FF' />
+          <stop offset='0.5213' stopColor='#D8ECFE' />
+          <stop offset='1' stopColor='#B3DAFE' />
         </linearGradient>
         <linearGradient
           id='paint15_linear'
@@ -287,9 +287,9 @@ export const PlanetSvg = () => {
           x2='41.0081'
           y2='485.844'
           gradientUnits='userSpaceOnUse'>
-          <stop stop-color='#EAF6FF' />
-          <stop offset='0.5213' stop-color='#D8ECFE' />
-          <stop offset='1' stop-color='#B3DAFE' />
+          <stop stopColor='#EAF6FF' />
+          <stop offset='0.5213' stopColor='#D8ECFE' />
+          <stop offset='1' stopColor='#B3DAFE' />
         </linearGradient>
       </defs>
     </svg>
