@@ -4,7 +4,7 @@
 
 #planet {
   animation-name: float;
-  animation-duration: 8s;
+  animation-duration: 5s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
   animation-direction: alternate;
@@ -12,7 +12,7 @@
 
 #frontMoons {
   animation-name: bounce;
-  animation-duration: 8s;
+  animation-duration: 5s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
   animation-direction: alternate;
@@ -20,7 +20,7 @@
 
 #backMoons {
   animation-name: bounce;
-  animation-duration: 8s;
+  animation-duration: 5s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
   animation-direction: alternate;
@@ -28,8 +28,9 @@
 
 #shadow {
   opacity: 0;
+  // transform: translate3d(0, 2vh, 0);
   // animation-name: fade;
-  // animation-duration: 8s;
+  // animation-duration: 5s;
   // animation-timing-function: linear;
   // animation-iteration-count: infinite;
   // animation-direction: alternate;
