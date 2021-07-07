@@ -17,7 +17,7 @@ export const PlanetSvg = () => {
             rx='99.5'
             ry='24.5'
             fill='#939393'
-            fill-opacity='0.65'
+            fillOpacity='0.65'
           />
           <g id={styles.backMoons}>
             <g id='Group'>

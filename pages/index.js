@@ -43,12 +43,6 @@ export default function index() {
 
           <div className={styles.logoBox}>
             <PlanetSvg />
-            {/* <img
-              src='/uranus.svg'
-              alt='planet logo'
-              className={styles.reactLogo}
-            /> */}
-            {/* <div className={styles.reactShadow}></div> */}
           </div>
         </div>
       </section>
