@@ -1,5 +1,7 @@
 import Link from "next/link";
 import styles from "../styles/components/Portfolio.module.scss";
+import { motion } from "framer-motion";
+import { InView } from "react-intersection-observer";
 
 const jsProjects = [
   {
@@ -57,51 +59,65 @@ const rubyProjects = [
 
 const renderProjects = (projects) => {
   return (
-    <div className={styles.row}>
-      <h3 className={styles.row__heading}>
-        <img
-          src={projects[0].header_logo}
-          alt={projects[0].header_logo}
-          className={styles.row__heading__img}
-        />{" "}
-        {projects[0].lang}
-      </h3>
-      <div className={styles.row__content}>
-        {projects.map((project) => (
-          <div className={styles.item} key={project.title}>
-            <img
-              className={styles.item__photo}
-              src={project.image}
-              alt={project.image}
-            />
-
-            <div className={styles.item__description}>
-              <div className={styles.item__main}>
-                <img
-                  src={project.tech}
-                  alt={project.tech}
-                  className={styles.item__logo}
-                />
-                <a
-                  className={styles.item__link}
-                  href={project.path}
-                  target="_blank"
+    <InView threshold={0.25} triggerOnce={true}>
+      {({ inView, ref }) => {
+        return (
+          <div ref={ref}>
+            <h3 className={styles.row__heading}>
+              <img
+                src={projects[0].header_logo}
+                alt={projects[0].header_logo}
+                className={styles.row__heading__img}
+              />{" "}
+              {projects[0].lang}
+            </h3>
+            <div className={styles.row__content}>
+              {projects.map((project, id) => (
+                <motion.div
+                  className={styles.item}
+                  key={project.title}
+                  initial={{ opacity: 0 }}
+                  animate={inView ? { opacity: 1 } : { opacity: 0 }}
+                  transition={{ duration: 0.25, delay: id * 0.25 }}
                 >
-                  <h5 className={styles.item__heading}>{project.title}</h5>
-                </a>
-              </div>
-              <a href={project.repo} target="_blank">
-                <img
-                  src="/github.svg"
-                  alt="github.svg"
-                  className={styles.item__github}
-                />
-              </a>
+                  <img
+                    className={styles.item__photo}
+                    src={project.image}
+                    alt={project.image}
+                  />
+
+                  <div className={styles.item__description}>
+                    <div className={styles.item__main}>
+                      <img
+                        src={project.tech}
+                        alt={project.tech}
+                        className={styles.item__logo}
+                      />
+                      <a
+                        className={styles.item__link}
+                        href={project.path}
+                        target="_blank"
+                      >
+                        <h5 className={styles.item__heading}>
+                          {project.title}
+                        </h5>
+                      </a>
+                    </div>
+                    <a href={project.repo} target="_blank">
+                      <img
+                        src="/github.svg"
+                        alt="github.svg"
+                        className={styles.item__github}
+                      />
+                    </a>
+                  </div>
+                </motion.div>
+              ))}
             </div>
           </div>
-        ))}
-      </div>
-    </div>
+        );
+      }}
+    </InView>
   );
 };
 

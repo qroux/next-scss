@@ -9,9 +9,11 @@
     "export": "next export"
   },
   "dependencies": {
+    "framer-motion": "^4.1.17",
     "next": "9.5.3",
     "react": "16.13.1",
     "react-dom": "16.13.1",
+    "react-intersection-observer": "^8.32.1",
     "sass": "^1.26.12"
   },
   "devDependencies": {
