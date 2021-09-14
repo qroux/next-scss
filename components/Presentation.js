@@ -30,7 +30,7 @@ const questions = [
     title: "Maintenant",
     logo: WebDev,
     content: "Je développe en langage ",
-    span: "Javascript et Ruby (Backend/Frontend).",
+    span: "Javascript et Typescript (Backend/Frontend).",
   },
 ];
 
