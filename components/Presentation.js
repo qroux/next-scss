@@ -6,6 +6,7 @@ import LeWagon from "../public/lewagon.png";
 import WebDev from "../public/web-dev-2.svg";
 import { motion } from "framer-motion";
 import { InView } from "react-intersection-observer";
+import { Animations } from "../styles/framerAnimations";
 
 const questions = [
   {
@@ -35,42 +36,46 @@ const questions = [
 
 const renderText = questions.map((question) => {
   return (
-    <div className={styles.questionBox} key={question.title}>
-      <h3 className={styles.question__heading}>{question.title}</h3>
-      <p>
-        {question.content}{" "}
-        <span className={styles.question__span}>{question.span}</span>
-      </p>
-    </div>
+    <InView threshold={0.35} triggerOnce={true} key={question.title}>
+      {({ inView, ref }) => {
+        return (
+          <motion.div
+            className={styles.questionBox}
+            ref={ref}
+            variants={Animations.sectionTransition}
+            initial={"hidden"}
+            animate={inView ? "visible" : ""}
+          >
+            <h3 className={styles.question__heading}>{question.title}</h3>
+            <p>
+              {question.content}{" "}
+              <span className={styles.question__span}>{question.span}</span>
+            </p>
+          </motion.div>
+        );
+      }}
+    </InView>
   );
 });
 
 export default function Presentation() {
   return (
-    <InView threshold={0.5}>
-      {({ inView, ref }) => {
-        return (
-          <div className={styles.presentation__layout} ref={ref}>
-            <div className={styles.presentation__container}>
-              <div className={styles.presentation__header}>
-                <h2 className={styles.presentation__heading}>
-                  Du Droit à la Programmation
-                </h2>
-              </div>
-              <div className={styles.presentation__content}>
-                <div className={styles.presentation__contentText}>
-                  {renderText}
-                </div>
-                <img
-                  src="/ethereum-2.svg"
-                  alt="ethereum-2 logo"
-                  className={styles.presentation__contentImage}
-                />
-              </div>
-            </div>
-          </div>
-        );
-      }}
-    </InView>
+    <div className={styles.presentation__layout}>
+      <div className={styles.presentation__container}>
+        <div className={styles.presentation__header}>
+          <h2 className={styles.presentation__heading}>
+            Du Droit à la Programmation
+          </h2>
+        </div>
+        <div className={styles.presentation__content}>
+          <div className={styles.presentation__contentText}>{renderText}</div>
+          <img
+            src="/ethereum-2.svg"
+            alt="ethereum-2 logo"
+            className={styles.presentation__contentImage}
+          />
+        </div>
+      </div>
+    </div>
   );
 }

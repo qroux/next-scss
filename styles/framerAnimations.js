@@ -23,6 +23,7 @@ export const Animations = {
     visible: {
       x: 0,
       opacity: 1,
+      transition: { ease: "easeInOut", duration: 0.5 },
     },
   },
   cardTransition: {
