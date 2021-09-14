@@ -39,9 +39,7 @@ const renderSections = sections.map((section) => {
             initial={"hidden"}
             animate={inView ? "visible" : ""}
           >
-            <h3 className={styles.section__header}>
-              {section.title}- {inView.toString()}
-            </h3>
+            <h3 className={styles.section__header}>{section.title}</h3>
 
             <div className={styles.section__content}>
               <div className={styles.section__contentMain}>
