@@ -2,6 +2,7 @@ import Link from "next/link";
 import styles from "../styles/components/Portfolio.module.scss";
 import { motion } from "framer-motion";
 import { InView } from "react-intersection-observer";
+import { Animations } from "../styles/framerAnimations";
 
 const jsProjects = [
   {
@@ -59,7 +60,7 @@ const rubyProjects = [
 
 const renderProjects = (projects) => {
   return (
-    <InView threshold={0.25} triggerOnce={true}>
+    <InView threshold={0.35} triggerOnce={true}>
       {({ inView, ref }) => {
         return (
           <div ref={ref}>
@@ -76,8 +77,9 @@ const renderProjects = (projects) => {
                 <motion.div
                   className={styles.item}
                   key={project.title}
-                  initial={{ opacity: 0 }}
-                  animate={inView ? { opacity: 1 } : { opacity: 0 }}
+                  variants={Animations.cardTransition}
+                  initial={"hidden"}
+                  animate={inView ? "visible" : ""}
                   transition={{ duration: 0.25, delay: id * 0.25 }}
                 >
                   <img
