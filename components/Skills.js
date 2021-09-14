@@ -8,15 +8,21 @@ const sections = [
     title: "FrontEnd",
     content:
       "Réalisation et intégration d'interfaces graphiques respectant les dernières contraintes : ",
-    span: "Responsive Design, Accessibilité, Performances, Compatibilité, SEO (server side rendering).",
-    images: ["/sass.svg", "/react.svg", "/redux.svg", "/vue.svg"],
+    span: "Responsive Design, Accessibilité, Performances, SEO, server side rendering, Material Ui.",
+    images: ["/react.svg", "/next.svg", "/redux.svg", "/material-ui.svg"],
   },
   {
     title: "BackEnd",
     content:
       "Conception d'applications web. Choix du langage selon les besoins et le temps de developpement disponible. ",
-    span: "Ruby on Rails ou Javascript.",
-    images: ["/rails.svg", "/javascript.svg"],
+    span: "NodeJs/Typescript ou Ruby on Rails. Base de données PostreSQL ou MongoDB.",
+    images: ["/typescript.svg", "postgresql.svg", "mongodb.svg", "rails.svg"],
+  },
+  {
+    title: "Mobile",
+    content: "Conception d'applications mobiles crossplateform. ",
+    span: "React native et Expo.",
+    images: ["/react.svg", "expo.svg"],
   },
   {
     title: "DevOps",

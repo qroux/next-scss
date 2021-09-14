@@ -6,7 +6,7 @@ import { Animations } from "../styles/framerAnimations";
 
 const jsProjects = [
   {
-    lang: "Javascript",
+    lang: "Javascript - Typescript",
     repo: "https://github.com/qroux/react-streaming",
     path: "https://react-stream-client.herokuapp.com/",
     title: "Twitch Copy",
@@ -55,6 +55,18 @@ const rubyProjects = [
     title: "Sinatra Blog",
     image: "/portfolio/skello.png",
     tech: "/sinatra.svg",
+  },
+];
+
+const mobileProjects = [
+  {
+    lang: "Mobile - React Native",
+    repo: "https://github.com/qroux/remontada-app",
+    path: "https://expo.dev/@qoux/remontada-app",
+    title: "Remontada",
+    image: "/portfolio/remontada-2.jpg",
+    tech: "/expo.svg",
+    header_logo: "/react.svg",
   },
 ];
 
@@ -130,6 +142,7 @@ export default function Portfolio() {
         <h2 className={styles.heading}>Portfolio</h2>
 
         <div className={styles.rows}>
+          {renderProjects(mobileProjects)}
           {renderProjects(jsProjects)}
           {renderProjects(rubyProjects)}
         </div>
