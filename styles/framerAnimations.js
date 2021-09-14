@@ -17,7 +17,7 @@ export const Animations = {
   },
   sectionTransition: {
     hidden: {
-      x: -50,
+      x: -10,
       opacity: 0,
     },
     visible: {
