@@ -1,6 +1,6 @@
-@import '../variables';
-@import '../animations';
-@import '../page';
+@import "../variables";
+@import "../animations";
+@import "../page";
 
 .presentation {
   &__layout {
@@ -12,7 +12,7 @@
   &__container {
     @include Container;
     // min-height: 50vh;
-    padding: 15rem 0;
+    padding: $section-padding;
   }
 
   &__header {

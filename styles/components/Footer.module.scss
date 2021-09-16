@@ -1,6 +1,6 @@
-@import '../variables';
-@import '../animations';
-@import '../page';
+@import "../variables";
+@import "../animations";
+@import "../page";
 
 // <div className={styles.footerLayout}>
 // <div className={styles.footerContainer}>
@@ -46,12 +46,12 @@
   align-items: center;
   border-radius: 100%;
   cursor: pointer;
-  background-color: rgba($bg-light, 0.2);
+  background-color: rgba($bg-light, 0.5);
 
   transition: background-color 0.5s;
 
   &:hover {
-    background-color: rgba($bg-light, 0.7);
+    background-color: rgba($bg-light, 1);
   }
 }
 
