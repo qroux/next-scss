@@ -69,7 +69,7 @@
     &__crossed {
       position: relative;
 
-      &::before {
+      &::after {
         content: '';
         position: absolute;
         top: 50%;
@@ -81,7 +81,7 @@
         animation: crossed 2s forwards 1s;
       }
 
-      &:hover::before {
+      &:hover::after {
         width: 100%;
       }
     }
