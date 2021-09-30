@@ -4,6 +4,7 @@ import Presentation from '../components/Presentation';
 import Skills from '../components/Skills';
 import Portfolio from '../components/Portfolio';
 import { PlanetSvg } from '../components/PlanetSvg';
+import { ChevronSvg } from '../components/ChevronSvg';
 
 const cards = [
   {

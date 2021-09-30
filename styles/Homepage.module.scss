@@ -1,6 +1,6 @@
-@import "./page";
-@import "./variables";
-@import "./animations";
+@import './page';
+@import './variables';
+@import './animations';
 
 .homePage {
   background-color: $bg-light;
@@ -70,7 +70,7 @@
       position: relative;
 
       &::before {
-        content: "";
+        content: '';
         position: absolute;
         top: 50%;
         left: 0;
@@ -88,7 +88,7 @@
 
     &__negativ {
       color: transparent;
-      background-image: url("../public/blue.jpg");
+      background-image: url('../public/blue.jpg');
       background-clip: text;
       background-position: bottom;
       -webkit-text-stroke: 1px rgba(0, 0, 0, 0.301);
