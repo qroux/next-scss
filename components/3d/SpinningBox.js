@@ -7,11 +7,15 @@ export default function SpinningBox({
   size = [1, 1, 1],
   color = 'hotpink',
   speed = 1,
+  reverse = false,
 }) {
   const meshRef = useRef(null);
 
   useFrame(
-    () => (meshRef.current.rotation.x = meshRef.current.rotation.y += 0.01)
+    () =>
+      (meshRef.current.rotation.x = meshRef.current.rotation.y += reverse
+        ? 0.02 * -1
+        : 0.01)
   );
 
   return (

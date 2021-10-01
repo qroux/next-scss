@@ -13,10 +13,11 @@ export default function sandbox() {
         alignItems: 'center',
         // border: '1px solid red',
         boxSizing: 'border-box',
+        minHeight: '70vh',
       }}>
       <Canvas
         shadows
-        style={{ height: '100vh', width: '100vw' }}
+        style={{ height: '60rem', width: '100%' }}
         colorManagement
         camera={{ position: [-5, 2, 10], fov: 60 }}>
         <ambientLight intensity={0.3} />
@@ -42,6 +43,7 @@ export default function sandbox() {
             size={[2, 2, 1]}
             color='royalblue'
             speed={2}
+            reverse={true}
           />
           <Box position={[5, 1, -2]} color='greenyellow' speed={20} />
 
