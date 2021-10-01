@@ -18,7 +18,7 @@ function MyApp({ Component, pageProps }) {
       </Head>
 
       <div className={styles.layout}>
-        {/* <Navbar />  */}
+        <Navbar />
         <div className={styles.fullpage}>
           <Component {...pageProps} />
         </div>
