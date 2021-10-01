@@ -1,6 +1,7 @@
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import { useFrame } from '@react-three/fiber';
 import { MeshWobbleMaterial } from '@react-three/drei';
+import { a, useSpring } from '@react-spring/three';
 
 export default function SpinningBox({
   position = [0, 0, 0],
@@ -10,6 +11,7 @@ export default function SpinningBox({
   reverse = false,
 }) {
   const meshRef = useRef(null);
+  const [expand, setExpand] = useState(false);
 
   useFrame(
     () =>
@@ -18,8 +20,17 @@ export default function SpinningBox({
         : 0.01)
   );
 
+  const props = useSpring({
+    scale: expand ? 1.4 : 1,
+  });
+
   return (
-    <mesh ref={meshRef} position={position} castShadow>
+    <a.mesh
+      ref={meshRef}
+      position={position}
+      castShadow
+      onClick={() => setExpand(!expand)}
+      scale={props.scale}>
       <boxBufferGeometry attach='geometry' args={size} />
       <MeshWobbleMaterial
         attach='material'
@@ -27,6 +38,6 @@ export default function SpinningBox({
         speed={speed}
         factor={0.6}
       />
-    </mesh>
+    </a.mesh>
   );
 }
