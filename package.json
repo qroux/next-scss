@@ -9,12 +9,16 @@
     "export": "next export"
   },
   "dependencies": {
+    "@react-three/cannon": "^3.1.2",
+    "@react-three/drei": "^7.12.5",
+    "@react-three/fiber": "^7.0.7",
     "framer-motion": "^4.1.17",
     "next": "9.5.3",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-intersection-observer": "^8.32.1",
-    "sass": "^1.26.12"
+    "sass": "^1.26.12",
+    "three": "^0.133.0"
   },
   "devDependencies": {
     "next-images": "^1.6.0"

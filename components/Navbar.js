@@ -2,6 +2,7 @@ import Link from 'next/link';
 import styles from '../styles/components/Navbar.module.scss';
 
 const links = [
+  { path: '/sandbox', label: '3d' },
   { path: '#presentation', label: 'Présentation' },
   { path: '#skills', label: 'Compétences' },
   { path: '#contacts', label: 'Contacts' },
