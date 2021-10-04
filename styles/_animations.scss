@@ -89,19 +89,18 @@
 
 @keyframes fadeInBG {
   0% {
-    opacity: 0;
   }
 
-  15% {
-    opacity: 1;
+  20% {
+    transform: translateY(0) translateX(0) scaleY(1) skew(0deg);
   }
 
-  25% {
+  30% {
     background-position: bottom;
   }
 
   100% {
-    opacity: 1;
+    transform: translateY(0) translateX(0) scaleY(1) skew(0deg);
     background-position: center;
   }
 }
@@ -188,5 +187,25 @@
   100% {
     transform: scale(1);
     background-color: rgba(0, 0, 0, 0.2);
+  }
+}
+
+// ANIMATED TEXT
+@keyframes skewOut {
+  0% {
+    transform: translateY(0) translateX(0) scaleY(1) skew(0);
+  }
+  100% {
+    transform: translateY(-5rem) translateX(5rem) scaleY(0) scaleX(80%)
+      skew(-30deg);
+  }
+}
+
+@keyframes skewIn {
+  0% {
+    transform: translateY(5rem) translateX(2rem) scaleY(0) skew(40deg);
+  }
+  100% {
+    transform: translateY(0) translateX(0) scaleY(1) skew(0deg);
   }
 }

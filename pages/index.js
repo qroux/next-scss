@@ -36,10 +36,20 @@ export default function index() {
     <div className={styles.homePage}>
       <section className={styles.textLayout} id='accueil'>
         <div className={styles.homeContainer}>
-          <div className={styles.textBox}>
+          {/* <div className={styles.textBox}>
             <h1 className={styles.text__regular}>Quentin Roux</h1>
             <h1 className={styles.text__crossed}>Juriste</h1>
             <h1 className={styles.text__negativ}>Développeur Fullstack</h1>
+          </div> */}
+
+          <div className={styles.textBox}>
+            <h1 className={styles.text__regular}>Quentin Roux</h1>
+            <div className={styles.text__animated}>
+              <h1 className={styles.text__animated__main}>Juriste</h1>
+              <h1 className={[styles.text__animated__hidden].join(' ')}>
+                Développeur
+              </h1>
+            </div>
           </div>
 
           <div className={styles.logoBox}>

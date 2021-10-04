@@ -63,41 +63,83 @@
   }
 
   .text {
-    &__regular {
-    }
-
-    &__crossed {
+    &__animated {
       position: relative;
 
-      &::after {
-        content: '';
+      &__main {
         position: absolute;
-        top: 50%;
+        top: 0;
         left: 0;
-        width: 0;
-        height: 1.1rem;
-        background-color: $primary-dark;
-        transition: all 0.5s;
-        animation: crossed 2s forwards 1s;
+        animation: skewOut 2s forwards 2s;
       }
 
-      &:hover::after {
-        width: 100%;
+      &__hidden {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateY(5rem) translateX(2rem) scaleY(0) skew(40deg);
+        // animation: skewIn 2s forwards 1s;
+
+        color: transparent;
+        background-image: url('../public/blue.jpg');
+        background-clip: text;
+        background-position: bottom;
+        -webkit-text-stroke: 1px rgba(0, 0, 0, 0.301);
+        filter: contrast(0.7);
+
+        animation: fadeInBG 10s forwards 2s;
       }
-    }
 
-    &__negativ {
-      color: transparent;
-      background-image: url('../public/blue.jpg');
-      background-clip: text;
-      background-position: bottom;
-      -webkit-text-stroke: 1px rgba(0, 0, 0, 0.301);
-      filter: contrast(0.7);
-      opacity: 0;
+      &__negativ {
+        color: transparent;
+        background-image: url('../public/blue.jpg');
+        background-clip: text;
+        background-position: bottom;
+        -webkit-text-stroke: 1px rgba(0, 0, 0, 0.301);
+        filter: contrast(0.7);
+        opacity: 0;
 
-      animation: fadeInBG 10s forwards 3s;
+        animation: fadeInBG ease-in 10s forwards 3s;
+      }
     }
   }
+
+  // .text {
+  //   &__regular {
+  //   }
+
+  //   &__crossed {
+  //     position: relative;
+
+  //     &::after {
+  //       content: '';
+  //       position: absolute;
+  //       top: 50%;
+  //       left: 0;
+  //       width: 0;
+  //       height: 1.1rem;
+  //       background-color: $primary-dark;
+  //       transition: all 0.5s;
+  //       animation: crossed 2s forwards 1s;
+  //     }
+
+  //     &:hover::after {
+  //       width: 100%;
+  //     }
+  //   }
+
+  //   &__negativ {
+  //     color: transparent;
+  //     background-image: url('../public/blue.jpg');
+  //     background-clip: text;
+  //     background-position: bottom;
+  //     -webkit-text-stroke: 1px rgba(0, 0, 0, 0.301);
+  //     filter: contrast(0.7);
+  //     opacity: 0;
+
+  //     animation: fadeInBG 10s forwards 3s;
+  //   }
+  // }
 }
 
 .cardsLayout {
