@@ -1,3 +1,4 @@
+import dynamic from 'next/dynamic';
 import { Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { Physics } from '@react-three/cannon';
@@ -8,7 +9,8 @@ import {
   useProgress,
   Html,
 } from '@react-three/drei';
-import Banana from '../components/3d/Banana';
+
+const Banana = dynamic(() => import('../components/3d/Banana'));
 
 softShadows();
 
