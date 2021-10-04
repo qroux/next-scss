@@ -193,7 +193,7 @@
 // ANIMATED TEXT
 @keyframes skewOut {
   0% {
-    transform: translateY(0) translateX(0) scaleY(1) skew(0);
+
   }
   100% {
     transform: translateY(-5rem) translateX(5rem) scaleY(0) scaleX(80%)
