@@ -10,7 +10,7 @@ const links = [
 ];
 
 export default function Navbar() {
-  const [clicked, setClicked] = useState(true);
+  const [clicked, setClicked] = useState(false);
 
   const renderLinks = () => {
     return links.map((link, id) => {
