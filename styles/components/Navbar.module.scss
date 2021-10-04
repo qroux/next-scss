@@ -68,14 +68,96 @@
   }
 
   &__menu {
-    border: 1px solid red;
     box-sizing: border-box;
-    height: 100%;
-    width: 10rem;
     display: none;
+    cursor: pointer;
+    // border: 1px solid rgba($text-dark, 0.1);
+    // border-radius: 5px;
 
     @include respond(phone) {
-      display: block;
+      height: 6rem;
+      width: 8rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-direction: column;
+    }
+
+    & * {
+      background-color: $text-dark;
+      width: 70%;
+      height: 0.5rem;
+      transform-origin: right;
+      transition: 0.5s;
+    }
+
+    &__logo {
+      &__top.clicked {
+        transform: rotate(-45deg);
+      }
+      &__middle.clicked {
+        background-color: rgba($text-dark, 0);
+      }
+      &__bottom.clicked {
+        transform: rotate(45deg);
+      }
+      // position: relative;
+      // width: 6rem;
+      // height: 0.6rem;
+      // background-color: rgba($text-dark, 1);
+      // transition: 1s;
+
+      // &.clicked {
+      //   background-color: rgba($text-dark, 0);
+      // }
+
+      // &::before {
+      //   position: absolute;
+      //   content: '';
+      //   top: -2rem;
+      //   left: 0;
+      //   background-color: rgba($text-dark, 1);
+      //   width: inherit;
+      //   height: 0.6rem;
+      //   transition: 1s;
+      //   transform-origin: left;
+      // }
+
+      // &::before.clicked {
+      //   transform: rotate(45deg) scale(1);
+      // }
+
+      // // &:hover::before {
+      // //   // transform-origin: left;
+      // //   transform: rotate3d(1, 1, 1, 45deg);
+      // // }
+
+      // &::after {
+      //   position: absolute;
+      //   content: '';
+      //   bottom: -2rem;
+      //   left: 0;
+      //   background-color: $text-dark;
+      //   width: 6rem;
+      //   height: 0.6rem;
+      //   transform-origin: left;
+      //   transition: 1s;
+      // }
+
+      // &::after.clicked {
+      //   position: absolute;
+      //   content: '';
+      //   bottom: -2rem;
+      //   left: 0;
+      //   background-color: $text-dark;
+      //   width: 6rem;
+      //   height: 0.6rem;
+
+      //   transform: rotate(-45deg) scale(1);
+      // }
     }
   }
+}
+
+.clicked {
 }

@@ -1,3 +1,4 @@
+import react, { useState } from 'react';
 import Link from 'next/link';
 import styles from '../styles/components/Navbar.module.scss';
 
@@ -9,6 +10,8 @@ const links = [
 ];
 
 export default function Navbar() {
+  const [clicked, setClicked] = useState(true);
+
   const renderLinks = () => {
     return links.map((link, id) => {
       return (
@@ -31,7 +34,23 @@ export default function Navbar() {
         </Link>
       </div>
       <div className={styles.navbar__left}>{renderLinks()}</div>
-      <div className={styles.navbar__menu}></div>
+      <div className={styles.navbar__menu} onClick={() => setClicked(!clicked)}>
+        <div
+          className={[
+            styles.navbar__menu__logo__top,
+            clicked ? styles.clicked : '',
+          ].join(' ')}></div>
+        <div
+          className={[
+            styles.navbar__menu__logo__middle,
+            clicked ? styles.clicked : '',
+          ].join(' ')}></div>
+        <div
+          className={[
+            styles.navbar__menu__logo__bottom,
+            clicked ? styles.clicked : '',
+          ].join(' ')}></div>
+      </div>
     </div>
   );
 }
