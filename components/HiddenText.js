@@ -1,11 +1,8 @@
 import React from 'react';
-import { motion, useAnimation } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { Animations } from '../styles/framerAnimations';
-import styles from '../styles/Homepage.module.scss';
 
 export default function HiddenText() {
-  const controls = useAnimation();
-
   return (
     <motion.div
       variants={Animations.hiddenTextTransition}
