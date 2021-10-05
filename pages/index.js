@@ -1,4 +1,5 @@
 import styles from '../styles/Homepage.module.scss';
+import { motion } from 'framer-motion';
 import Presentation from '../components/Presentation';
 import Skills from '../components/Skills';
 import Portfolio from '../components/Portfolio';
@@ -42,7 +43,17 @@ export default function index() {
             <h1 className={styles.text__negativ}>Développeur Fullstack</h1>
           </div> */}
 
-          <div className={styles.textBox}>
+          <motion.div
+            className={styles.textBox}
+            initial={{ height: 'calc(100vh - 10rem)' }}
+            animate={{
+              height: '70vh',
+              transition: {
+                delay: 5,
+                duration: 2,
+                ease: 'easeInOut',
+              },
+            }}>
             <h1 className={styles.text__regular}>Quentin Roux</h1>
             <div className={styles.text__animated}>
               <MainText />
@@ -52,7 +63,7 @@ export default function index() {
                 Développeur
               </h1> */}
             </div>
-          </div>
+          </motion.div>
 
           <div className={styles.logoBox}>
             <PlanetSvg />

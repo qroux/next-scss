@@ -1,6 +1,6 @@
-@import "./page";
-@import "./variables";
-@import "./animations";
+@import './page';
+@import './variables';
+@import './animations';
 
 .homePage {
   background-color: $bg-light;
@@ -59,7 +59,7 @@
     flex: 0.6;
     height: calc(100vh - 10rem);
 
-    animation: shrink 2s forwards 5s;
+    // animation: shrink 2s forwards 5s;
   }
 
   .text {
@@ -81,7 +81,7 @@
         transform: translateY(5rem) translateX(2rem) scaleY(0) skew(40deg);
 
         color: transparent;
-        background-image: url("../public/blue.jpg");
+        background-image: url('../public/blue.jpg');
         background-clip: text;
         background-position: bottom;
         -webkit-text-stroke: 1px rgba(0, 0, 0, 0.301);
@@ -92,7 +92,7 @@
 
       &__negativ {
         color: transparent;
-        background-image: url("../public/blue.jpg");
+        background-image: url('../public/blue.jpg');
         background-clip: text;
         background-position: bottom;
         -webkit-text-stroke: 1px rgba(0, 0, 0, 0.301);

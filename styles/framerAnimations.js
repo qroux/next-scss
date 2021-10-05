@@ -37,25 +37,13 @@ export const Animations = {
     },
   },
   mainTextTransition: {
-    hidden: {
-      // translateY: '-5rem',
-      // translateX: '1rem',
-      // scaleY: 0,
-      // skew: '-30deg',
-      // translateY: '5rem',
-      // translateX: '2rem',
-      // scaleY: 0,
-      // skew: '40deg',
-      // position: 'absolute',
-      // top: 0,
-      // left: 0,
-    },
+    hidden: {},
     visible: {
       translateY: '-5rem',
       translateX: '1rem',
       scaleY: 0,
       skew: '-30deg',
-      transition: { duration: 2, delay: 2 },
+      transition: { duration: 2, delay: 2, ease: 'easeIn' },
     },
   },
   hiddenTextTransition: {
@@ -73,7 +61,7 @@ export const Animations = {
       translateX: '0rem',
       scaleY: 1,
       skew: 0,
-      transition: { duration: 2, delay: 2 },
+      transition: { duration: 2, delay: 2, ease: 'easeIn' },
     },
   },
   hiddenTextBG: {
