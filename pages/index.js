@@ -1,21 +1,23 @@
-import Link from "next/link";
-import styles from "../styles/Homepage.module.scss";
-import Presentation from "../components/Presentation";
-import Skills from "../components/Skills";
-import Portfolio from "../components/Portfolio";
-import { PlanetSvg } from "../components/PlanetSvg";
-import { ChevronSvg } from "../components/ChevronSvg";
+import Link from 'next/link';
+import styles from '../styles/Homepage.module.scss';
+import Presentation from '../components/Presentation';
+import Skills from '../components/Skills';
+import Portfolio from '../components/Portfolio';
+import { PlanetSvg } from '../components/PlanetSvg';
+import { ChevronSvg } from '../components/ChevronSvg';
+import MainText from '../components/MainText';
+import HiddenText from '../components/HiddenText';
 
 const cards = [
   {
-    title: "Présentation",
-    path: "/presentation",
-    description: "Du droit à la programmation",
+    title: 'Présentation',
+    path: '/presentation',
+    description: 'Du droit à la programmation',
   },
   {
-    title: "Languages",
-    path: "/languages",
-    description: "Prestations et Langages",
+    title: 'Languages',
+    path: '/languages',
+    description: 'Prestations et Langages',
   },
   // {title: "Portfolio", path: "/portfolio", description: "Du droit à la programmation"},
 ];
@@ -34,7 +36,7 @@ const renderCards = cards.map((card) => {
 export default function index() {
   return (
     <div className={styles.homePage}>
-      <section className={styles.textLayout} id="accueil">
+      <section className={styles.textLayout} id='accueil'>
         <div className={styles.homeContainer}>
           {/* <div className={styles.textBox}>
             <h1 className={styles.text__regular}>Quentin Roux</h1>
@@ -45,10 +47,12 @@ export default function index() {
           <div className={styles.textBox}>
             <h1 className={styles.text__regular}>Quentin Roux</h1>
             <div className={styles.text__animated}>
-              <h1 className={styles.text__animated__main}>Juriste</h1>
-              <h1 className={[styles.text__animated__hidden].join(" ")}>
+              <MainText />
+              <HiddenText />
+              {/* <h1 className={styles.text__animated__main}>Juriste</h1> */}
+              {/* <h1 className={[styles.text__animated__hidden].join(' ')}>
                 Développeur
-              </h1>
+              </h1> */}
             </div>
           </div>
 
@@ -58,13 +62,13 @@ export default function index() {
         </div>
       </section>
 
-      <section id="presentation">
+      <section id='presentation'>
         <Presentation />
       </section>
-      <section id="skills">
+      <section id='skills'>
         <Skills />
       </section>
-      <section id="portfolio">
+      <section id='portfolio'>
         <Portfolio />
       </section>
     </div>
