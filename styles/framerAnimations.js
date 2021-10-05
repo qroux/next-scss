@@ -61,7 +61,7 @@ export const Animations = {
       translateX: '0rem',
       scaleY: 1,
       skew: 0,
-      transition: { duration: 2, delay: 2, ease: 'easeIn' },
+      transition: { duration: 2, delay: 2, ease: 'easeInOut' },
     },
   },
   hiddenTextBG: {
