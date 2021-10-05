@@ -1,6 +1,6 @@
-@import './page';
-@import './variables';
-@import './animations';
+@import "./page";
+@import "./variables";
+@import "./animations";
 
 .homePage {
   background-color: $bg-light;
@@ -78,10 +78,9 @@
         top: 0;
         left: 0;
         transform: translateY(5rem) translateX(2rem) scaleY(0) skew(40deg);
-        // animation: skewIn 2s forwards 1s;
 
         color: transparent;
-        background-image: url('../public/blue.jpg');
+        background-image: url("../public/blue.jpg");
         background-clip: text;
         background-position: bottom;
         -webkit-text-stroke: 1px rgba(0, 0, 0, 0.301);
@@ -92,7 +91,7 @@
 
       &__negativ {
         color: transparent;
-        background-image: url('../public/blue.jpg');
+        background-image: url("../public/blue.jpg");
         background-clip: text;
         background-position: bottom;
         -webkit-text-stroke: 1px rgba(0, 0, 0, 0.301);

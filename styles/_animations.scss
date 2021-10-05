@@ -89,6 +89,7 @@
 
 @keyframes fadeInBG {
   0% {
+    transform: translateY(5rem) translateX(2rem) scaleY(0) skew(40deg);
   }
 
   20% {
@@ -97,6 +98,7 @@
 
   30% {
     background-position: bottom;
+    transform: translateY(0) translateX(0) scaleY(1) skew(0deg);
   }
 
   100% {
@@ -193,11 +195,10 @@
 // ANIMATED TEXT
 @keyframes skewOut {
   0% {
-
+    transform: translateY(0) translateX(0) scaleY(1) skew(0);
   }
   100% {
-    transform: translateY(-5rem) translateX(5rem) scaleY(0) scaleX(80%)
-      skew(-30deg);
+    transform: translateY(-5rem) translateX(5rem) scaleY(0) skew(-30deg);
   }
 }
 
