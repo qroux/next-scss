@@ -43,7 +43,7 @@ export const Animations = {
       translateX: '1rem',
       scaleY: 0,
       skew: '-30deg',
-      transition: { duration: 2, delay: 2, ease: 'easeIn' },
+      transition: { duration: 2, delay: 2, ease: 'easeInOut' },
     },
   },
   hiddenTextTransition: {
