@@ -36,9 +36,27 @@ export const Animations = {
   menuModal: {
     hidden: {
       scaleX: 0,
+      transition: { ease: 'easeInOut', duration: 0.5 },
     },
     visible: {
       scaleX: 1,
+      transition: { ease: 'easeOut', duration: 0.5 },
+    },
+  },
+  chevronTransition: {
+    initial: {
+      opacity: 0,
+      top: 0,
+    },
+    animate: {
+      opacity: 0.1,
+      top: '-15rem',
+      transition: { delay: 7 },
+    },
+    hover: {
+      translateY: '1.5rem',
+      scaleX: 0.8,
+      transition: { duration: 0.5 },
     },
   },
   sectionTransition: {
