@@ -15,6 +15,24 @@ export const Animations = {
       transition: { duration: 0.3 },
     },
   },
+  menuTransition: (reverse = false) => {
+    return {
+      initial: {
+        rotate: 0,
+      },
+      animate: {
+        rotate: reverse ? 45 : -45,
+      },
+    };
+  },
+  menuFade: {
+    initial: {
+      scale: 1,
+    },
+    animate: {
+      scale: 0,
+    },
+  },
   sectionTransition: {
     hidden: {
       x: -10,
