@@ -1,6 +1,7 @@
-import Document, { Html, Head, Main, NextScript } from 'next/document'
+import Document, { Html, Head, Main, NextScript } from 'next/document';
+import { motion, AnimatePresence } from 'framer-motion';
 
-import { GA_TRACKING_ID } from '../lib/gtag'
+import { GA_TRACKING_ID } from '../lib/gtag';
 
 export default class MyDocument extends Document {
   render() {
@@ -27,9 +28,10 @@ export default class MyDocument extends Document {
         </Head>
         <body>
           <Main />
+          <motion.div id='menuModal' />
           <NextScript />
         </body>
       </Html>
-    )
+    );
   }
 }

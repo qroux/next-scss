@@ -33,6 +33,14 @@ export const Animations = {
       scale: 0,
     },
   },
+  menuModal: {
+    hidden: {
+      scaleX: 0,
+    },
+    visible: {
+      scaleX: 1,
+    },
+  },
   sectionTransition: {
     hidden: {
       x: -10,

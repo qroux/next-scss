@@ -1,7 +1,10 @@
 import react, { useState } from 'react';
+import { AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
 import styles from '../styles/components/Navbar.module.scss';
 import MenuButton from './MenuButton';
+import MenuModal from './MenuModal';
+import Portal from './Portal';
 
 const links = [
   // { path: '/sandbox', label: '3d' },
@@ -11,7 +14,7 @@ const links = [
 ];
 
 export default function Navbar() {
-  // const [clicked, setClicked] = useState(false);
+  const [clicked, setClicked] = useState(false);
 
   const renderLinks = () => {
     return links.map((link, id) => {
@@ -35,7 +38,11 @@ export default function Navbar() {
         </Link>
       </div>
       <div className={styles.navbar__left}>{renderLinks()}</div>
-      <MenuButton />
+      <MenuButton state={clicked} setState={setClicked} />
+
+      <Portal clicked={clicked}>
+        <MenuModal clicked={clicked} />
+      </Portal>
     </div>
   );
 }

@@ -11,24 +11,22 @@ import { Animations } from '../styles/framerAnimations';
 //   { path: '/#contacts', label: 'Contacts' },
 // ];
 
-export default function MenuButton() {
-  const [clicked, setClicked] = useState(false);
-
+export default function MenuButton({ state, setState }) {
   return (
-    <div className={styles.navbar__menu} onClick={() => setClicked(!clicked)}>
+    <div className={styles.navbar__menu} onClick={() => setState(!state)}>
       <motion.div
         className={[styles.navbar__menu__logo__top]}
         variants={Animations.menuTransition()}
-        animate={clicked ? 'animate' : 'initial'}></motion.div>
+        animate={state ? 'animate' : 'initial'}></motion.div>
       <motion.div
         className={styles.navbar__menu__logo__middle}
         variants={Animations.menuFade}
         initial={'initial'}
-        animate={clicked ? 'animate' : 'initial'}></motion.div>
+        animate={state ? 'animate' : 'initial'}></motion.div>
       <motion.div
         className={styles.navbar__menu__logo__bottom}
         variants={Animations.menuTransition(true)}
-        animate={clicked ? 'animate' : 'initial'}></motion.div>
+        animate={state ? 'animate' : 'initial'}></motion.div>
     </div>
   );
 }
