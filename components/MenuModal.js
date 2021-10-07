@@ -9,6 +9,8 @@ export default function MenuModal({ clicked }) {
         position: 'absolute',
         top: 50,
         left: 0,
+        right: 0,
+        bottom: 0,
         height: '100vh',
         width: '100vw',
         backgroundColor: '#090f20',
