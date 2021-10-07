@@ -1,15 +1,7 @@
-import React, { useState, useEffect } from 'react';
-import Link from 'next/link';
+import React, { useEffect } from 'react';
 import styles from '../styles/components/Navbar.module.scss';
 import { motion } from 'framer-motion';
 import { Animations } from '../styles/framerAnimations';
-
-// const links = [
-//   // { path: '/sandbox', label: '3d' },
-//   { path: '/#presentation', label: 'Présentation' },
-//   { path: '/#skills', label: 'Compétences' },
-//   { path: '/#contacts', label: 'Contacts' },
-// ];
 
 export default function MenuButton({ state, setState }) {
   useEffect(() => {

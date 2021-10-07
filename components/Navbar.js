@@ -1,5 +1,5 @@
-import react, { useState } from 'react';
-import { AnimatePresence } from 'framer-motion';
+import { useState } from 'react';
+import { motion } from 'framer-motion';
 import Link from 'next/link';
 import styles from '../styles/components/Navbar.module.scss';
 import MenuButton from './MenuButton';
@@ -27,22 +27,20 @@ export default function Navbar() {
   };
 
   return (
-    <div className={styles.navbar}>
-      <div className={styles.navbar__right}>
-        <Link href='/'>
-          <img
-            src='/cube.svg'
-            alt='blockchain logo'
-            className={styles.navbar__logo}
-          />
-        </Link>
-      </div>
-      <div className={styles.navbar__left}>{renderLinks()}</div>
-      <MenuButton state={clicked} setState={setClicked} />
+    <motion.div className={styles.navbar}>
+      <div className={styles.navbar__content}>
+        <div className={styles.navbar__right}>
+          <Link href='/'>
+            <img src='/cube.svg' alt='logo' className={styles.navbar__logo} />
+          </Link>
+        </div>
+        <div className={styles.navbar__left}>{renderLinks()}</div>
+        <MenuButton state={clicked} setState={setClicked} />
 
-      <Portal clicked={clicked}>
-        <MenuModal clicked={clicked} setClicked={setClicked} />
-      </Portal>
-    </div>
+        <Portal clicked={clicked}>
+          <MenuModal clicked={clicked} setClicked={setClicked} />
+        </Portal>
+      </div>
+    </motion.div>
   );
 }

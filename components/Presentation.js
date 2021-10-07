@@ -1,9 +1,5 @@
 import styles from '../styles/components/Presentation.module.scss';
 import Link from 'next/link';
-// import EthSvg from "../public/ethereum-2.svg";
-// import Coding from "../public/coding.svg";
-// import LeWagon from '../public/lewagon.png';
-// import WebDev from '../public/web-dev-2.svg';
 import { motion } from 'framer-motion';
 import { InView } from 'react-intersection-observer';
 import { Animations } from '../styles/framerAnimations';
