@@ -36,14 +36,10 @@ export const Animations = {
   menuModal: {
     hidden: {
       scaleX: 0,
-      borderBottomLeftRadius: '100%',
-      borderTopLeftRadius: '100%',
       transition: { ease: 'easeInOut', duration: 0.5 },
     },
     visible: {
       scaleX: 1,
-      borderBottomLeftRadius: '0%',
-      borderTopLeftRadius: '0%',
       transition: { ease: 'easeInOut', duration: 0.5 },
     },
   },

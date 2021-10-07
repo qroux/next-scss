@@ -12,6 +12,7 @@ export default function MenuLink({
 
   return (
     <div
+      style={{ margin: '2rem 0 ' }}
       onClick={() => {
         setClicked(false);
         setTimeout(() => router.push(path), 500);

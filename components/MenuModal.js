@@ -18,7 +18,7 @@ export default function MenuModal({ clicked, setClicked }) {
         key={id}
         initial={{
           opacity: 0,
-          translateX: '5rem',
+          translateX: '3rem',
         }}
         animate={{
           opacity: 1,
@@ -31,6 +31,7 @@ export default function MenuModal({ clicked, setClicked }) {
   });
   return (
     <motion.div
+      onClick={() => setClicked(false)}
       className={styles.menuModal}
       variants={Animations.menuModal}
       initial={'hidden'}
