@@ -28,7 +28,10 @@ export default class MyDocument extends Document {
         </Head>
         <body>
           <Main />
-          <motion.div id='menuModal' />
+          <motion.div
+            id='menuModal'
+            style={{ position: 'absolute', top: '12rem', left: 0 }}
+          />
           <NextScript />
         </body>
       </Html>

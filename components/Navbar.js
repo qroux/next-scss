@@ -41,7 +41,7 @@ export default function Navbar() {
       <MenuButton state={clicked} setState={setClicked} />
 
       <Portal clicked={clicked}>
-        <MenuModal clicked={clicked} />
+        <MenuModal clicked={clicked} setClicked={setClicked} />
       </Portal>
     </div>
   );
