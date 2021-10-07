@@ -12,14 +12,14 @@ import { Animations } from '../styles/framerAnimations';
 // ];
 
 export default function MenuButton({ state, setState }) {
-  // useEffect(() => {
-  //   const scrollable = state ? 'hidden' : 'scroll';
-  //   document.body.style.overflow = scrollable;
+  useEffect(() => {
+    const scrollable = state ? 'hidden' : 'scroll';
+    document.body.style.overflow = scrollable;
 
-  //   return () => {
-  //     document.body.style.overflow = 'scroll';
-  //   };
-  // }, [state]);
+    return () => {
+      document.body.style.overflow = 'scroll';
+    };
+  }, [state]);
 
   return (
     <div className={styles.navbar__menu} onClick={() => setState(!state)}>
