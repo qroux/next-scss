@@ -30,7 +30,7 @@ export default class MyDocument extends Document {
           <Main />
           <motion.div
             id='menuModal'
-            style={{ position: 'absolute', top: '12rem', left: 0 }}
+            style={{ position: 'fixed', top: '12rem', left: 0 }}
           />
           <NextScript />
         </body>
