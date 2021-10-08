@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import styles from '../styles/components/Navbar.module.scss';
@@ -15,6 +15,15 @@ const links = [
 
 export default function Navbar() {
   const [clicked, setClicked] = useState(false);
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    if (window) {
+      window.addEventListener('scroll', () => {
+        setScrollY(window.scrollY);
+      });
+    }
+  }, []);
 
   const renderLinks = () => {
     return links.map((link, id) => {
@@ -27,7 +36,8 @@ export default function Navbar() {
   };
 
   return (
-    <motion.div className={styles.navbar}>
+    <motion.div
+      className={[styles.navbar, scrollY > 150 ? styles.active : ''].join(' ')}>
       <div className={styles.navbar__content}>
         <div className={styles.navbar__right}>
           <Link href='/'>

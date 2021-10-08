@@ -7,6 +7,7 @@
   top: 0;
   z-index: 100;
   background-color: $bg-light;
+  transition: box-shadow 0.25s;
 
   &__content {
     @include Container;
@@ -97,6 +98,11 @@
       border-radius: 1rem;
     }
   }
+}
+
+.navbar.active {
+  transition: box-shadow 0.25s;
+  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.185);
 }
 
 .menuModal {
