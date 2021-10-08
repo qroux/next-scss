@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import styles from '../styles/components/Navbar.module.scss';
@@ -17,12 +17,28 @@ export default function Navbar() {
   const [clicked, setClicked] = useState(false);
   const [scrollY, setScrollY] = useState(0);
 
+  const debounce = (fn, delay) => {
+    let timer = null;
+    return function (...args) {
+      const context = this;
+      timer && clearTimeout(timer);
+      timer = setTimeout(() => {
+        fn.apply(context, args);
+      }, delay);
+    };
+  };
+
+  const handleScroll = () => {
+    setScrollY(window.scrollY);
+  };
+
+  const debouncedScroll = useCallback(debounce(handleScroll, 40), []);
+
   useEffect(() => {
-    if (window) {
-      window.addEventListener('scroll', () => {
-        setScrollY(window.scrollY);
-      });
-    }
+    window.addEventListener('scroll', debouncedScroll);
+    return () => {
+      window.removeEventListener('scroll', debouncedScroll);
+    };
   }, []);
 
   const renderLinks = () => {
