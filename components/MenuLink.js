@@ -17,7 +17,7 @@ export default function MenuLink({
         setClicked(false);
         setTimeout(() => router.push(path), 500);
       }}>
-      <h2 style={{ color: 'white' }}>{label}</h2>
+      <h2 style={{ color: 'white', fontWeight: 400 }}>{label}</h2>
     </div>
   );
 }

@@ -23,7 +23,7 @@ export default function MenuModal({ clicked, setClicked }) {
         animate={{
           opacity: 1,
           translateX: 0,
-          transition: { delay: 0.5 + 0.05 * id },
+          transition: { delay: 0.2 + 0.05 * id },
         }}>
         <MenuLink label={link.label} path={link.path} setClicked={setClicked} />
       </motion.div>
