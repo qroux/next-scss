@@ -8,6 +8,7 @@ const links = [
   // { path: '/sandbox', label: '3d' },
   { path: '/#presentation', label: 'Présentation' },
   { path: '/#skills', label: 'Compétences' },
+  { path: '/#portfolio', label: 'Portfolio' },
   { path: '/#contacts', label: 'Contacts' },
 ];
 
