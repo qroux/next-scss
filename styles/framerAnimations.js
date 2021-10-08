@@ -36,11 +36,11 @@ export const Animations = {
   menuModal: {
     hidden: {
       scaleX: 0,
-      transition: { ease: 'easeInOut', duration: 0.2 },
+      transition: { ease: 'easeInOut', duration: 0.3 },
     },
     visible: {
       scaleX: 1,
-      transition: { ease: 'easeInOut', duration: 0.2 },
+      transition: { ease: 'easeInOut', duration: 0.3 },
     },
   },
   chevronTransition: {
