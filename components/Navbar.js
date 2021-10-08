@@ -56,8 +56,13 @@ export default function Navbar() {
       className={[styles.navbar, scrollY > 150 ? styles.active : ''].join(' ')}>
       <div className={styles.navbar__content}>
         <div className={styles.navbar__right}>
-          <Link href='/#' passHref>
-            <img src='/cube.svg' alt='logo' className={styles.navbar__logo} />
+          <Link href='/'>
+            <img
+              src='/cube.svg'
+              alt='logo'
+              className={styles.navbar__logo}
+              onClick={() => window.scrollTo(0, 0)}
+            />
           </Link>
         </div>
         <div className={styles.navbar__left}>{renderLinks()}</div>
