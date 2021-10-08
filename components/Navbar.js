@@ -56,7 +56,7 @@ export default function Navbar() {
       className={[styles.navbar, scrollY > 150 ? styles.active : ''].join(' ')}>
       <div className={styles.navbar__content}>
         <div className={styles.navbar__right}>
-          <Link href='/'>
+          <Link href='/#' passHref>
             <img src='/cube.svg' alt='logo' className={styles.navbar__logo} />
           </Link>
         </div>
