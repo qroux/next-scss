@@ -1,6 +1,6 @@
-@import "../variables";
-@import "../animations";
-@import "../page";
+@import '../variables';
+@import '../animations';
+@import '../page';
 
 .skills {
   &__layout {
@@ -125,6 +125,7 @@
 
       &__item {
         height: 9rem;
+        width: 9rem;
         margin-left: 5rem;
 
         @include respond(tab-port) {
