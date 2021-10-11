@@ -109,13 +109,17 @@ const renderProjects = (projects) => {
                       <a
                         className={styles.item__link}
                         href={project.path}
-                        target='_blank'>
+                        target='_blank'
+                        rel='noopener noreferrer'>
                         <h5 className={styles.item__heading}>
                           {project.title}
                         </h5>
                       </a>
                     </div>
-                    <a href={project.repo} target='_blank'>
+                    <a
+                      href={project.repo}
+                      target='_blank'
+                      rel='noopener noreferrer'>
                       <img
                         src='/github.svg'
                         alt='github.svg'
