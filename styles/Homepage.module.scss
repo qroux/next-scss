@@ -80,26 +80,26 @@
         left: 0;
         transform: translateY(5rem) translateX(2rem) scaleY(0) skew(40deg);
 
-        color: transparent;
-        background-image: url('../public/blue.jpg');
-        background-clip: text;
-        background-position: bottom;
-        -webkit-text-stroke: 1px rgba(0, 0, 0, 0.301);
-        filter: contrast(0.7);
+        // color: transparent;
+        // background-image: url('../public/movingBG.webp');
+        // background-clip: text;
+        // background-position: bottom;
+        // -webkit-text-stroke: 1px rgba(0, 0, 0, 0.301);
+        // filter: contrast(0.7);
 
-        animation: fadeInBG 10s forwards 2s;
+        // animation: fadeInBG 10s forwards 2s;
       }
 
       &__negativ {
-        color: transparent;
-        background-image: url('../public/blue.jpg');
-        background-clip: text;
-        background-position: bottom;
-        -webkit-text-stroke: 1px rgba(0, 0, 0, 0.301);
-        filter: contrast(0.7);
-        opacity: 0;
+        // color: transparent;
+        // background-image: url('../public/movingBG.webp');
+        // background-clip: text;
+        // background-position: bottom;
+        // -webkit-text-stroke: 1px rgba(0, 0, 0, 0.301);
+        // filter: contrast(0.7);
+        // opacity: 0;
 
-        animation: fadeInBG ease-in 10s forwards 3s;
+        // animation: fadeInBG ease-in 10s forwards 3s;
       }
     }
   }
