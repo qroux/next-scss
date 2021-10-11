@@ -56,34 +56,52 @@ const renderText = questions.map((question) => {
 
 export default function Presentation() {
   return (
-    <div className={styles.presentation__layout}>
-      <div className={styles.chevron}>
-        <Link href='#presentation'>
-          <motion.div
-            className={styles.chevron__box}
-            variants={Animations.chevronTransition}
-            initial={'initial'}
-            animate={'animate'}
-            whileHover={'hover'}>
-            <ChevronSvg />
-          </motion.div>
-        </Link>
-      </div>
-      <div className={styles.presentation__container}>
-        <div className={styles.presentation__header}>
-          <h2 className={styles.presentation__heading}>
-            Du Droit à la Programmation
-          </h2>
+    <>
+      <motion.div
+        style={{
+          height: '15vh',
+          backgroundColor: '#eef9fc',
+          transformOrigin: 'bottom',
+        }}
+        initial={{ scaleY: 0 }}
+        animate={{
+          scaleY: 1,
+          transition: {
+            delay: 5,
+            duration: 2,
+            ease: 'easeInOut',
+          },
+        }}>
+        <div className={styles.chevron}>
+          <Link href='#presentation'>
+            <motion.div
+              className={styles.chevron__box}
+              variants={Animations.chevronTransition}
+              initial={'initial'}
+              animate={'animate'}
+              whileHover={'hover'}>
+              <ChevronSvg />
+            </motion.div>
+          </Link>
         </div>
-        <div className={styles.presentation__content}>
-          <div className={styles.presentation__contentText}>{renderText}</div>
-          <img
-            src='/ethereum-2.svg'
-            alt='ethereum-2 logo'
-            className={styles.presentation__contentImage}
-          />
+      </motion.div>
+      <div className={styles.presentation__layout}>
+        <div className={styles.presentation__container}>
+          <div className={styles.presentation__header}>
+            <h2 className={styles.presentation__heading}>
+              Du Droit à la Programmation
+            </h2>
+          </div>
+          <div className={styles.presentation__content}>
+            <div className={styles.presentation__contentText}>{renderText}</div>
+            <img
+              src='/ethereum-2.svg'
+              alt='ethereum-2 logo'
+              className={styles.presentation__contentImage}
+            />
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }

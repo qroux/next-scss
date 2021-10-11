@@ -46,10 +46,10 @@ export const Animations = {
   chevronTransition: {
     initial: {
       opacity: 0,
-      top: 0,
+      top: '-10rem',
     },
     animate: {
-      opacity: 0.1,
+      opacity: 0.2,
       top: '-15rem',
       transition: { delay: 7 },
     },
