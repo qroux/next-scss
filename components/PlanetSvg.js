@@ -19,7 +19,7 @@ const Animations = {
   frontMoons: {
     animate: {
       translateY: "5vh",
-      scale: 1.1,
+      scale: 1.05,
       transition: {
         duration: timer,
         ease: "easeInOut",
