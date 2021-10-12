@@ -1,32 +1,32 @@
-import Link from "next/link";
-import styles from "../styles/components/Portfolio.module.scss";
-import { motion } from "framer-motion";
-import { InView } from "react-intersection-observer";
-import { Animations } from "../styles/framerAnimations";
+import Link from 'next/link';
+import styles from '../styles/components/Portfolio.module.scss';
+import { motion } from 'framer-motion';
+import { InView } from 'react-intersection-observer';
+import { Animations } from '../styles/framerAnimations';
 
 const jsProjects = [
   {
-    lang: "Javascript - Typescript",
-    repo: "https://github.com/qroux/react-streaming",
-    path: "https://react-stream-client.herokuapp.com/",
-    title: "Twitch Copy",
-    image: "/portfolio/cursed-twitch.png",
-    tech: "/react.svg",
-    header_logo: "/javascript.svg",
+    lang: 'Javascript - Typescript',
+    repo: 'https://github.com/qroux/react-streaming',
+    path: 'https://react-stream-client.herokuapp.com/',
+    title: 'Twitch Copy',
+    image: '/portfolio/cursed-twitch.webp',
+    tech: '/react.svg',
+    header_logo: '/javascript.svg',
   },
   {
-    repo: "https://github.com/qroux/next-cabinet",
-    path: "https://dr-roux-gilbert.chirurgiens-dentistes.fr/",
-    title: "Cabinet Dentaire",
-    image: "/portfolio/next-cabinet.png",
-    tech: "/next.svg",
+    repo: 'https://github.com/qroux/next-cabinet',
+    path: 'https://dr-roux-gilbert.chirurgiens-dentistes.fr/',
+    title: 'Cabinet Dentaire',
+    image: '/portfolio/next-cabinet.webp',
+    tech: '/next.svg',
   },
   {
-    repo: "https://github.com/qroux/DigitalOcean_Ticketing",
-    path: "https://www.ticketswapping.xyz/",
-    title: "Microservices",
-    image: "/portfolio/ticketswapping.png",
-    tech: "/typescript.svg",
+    repo: 'https://github.com/qroux/DigitalOcean_Ticketing',
+    path: 'https://www.ticketswapping.xyz/',
+    title: 'Microservices',
+    image: '/portfolio/ticketswapping.webp',
+    tech: '/typescript.svg',
   },
 
   // { repo: "https://github.com/qroux/kickstart", path: "https://kickstarter-copy.herokuapp.com/", title: "Blockchain", image: "/portfolio/kickstarter.png", tech: "/eth.svg"},
@@ -34,39 +34,39 @@ const jsProjects = [
 
 const rubyProjects = [
   {
-    lang: "Ruby",
-    repo: "https://github.com/qroux/NOTICE-DROIT",
-    path: "https://www.notice-droit.fr/",
-    title: "notice-droit.fr",
-    image: "/portfolio/notice.png",
-    tech: "/rails.svg",
-    header_logo: "/ruby.svg",
+    lang: 'Ruby',
+    repo: 'https://github.com/qroux/NOTICE-DROIT',
+    path: 'https://www.notice-droit.fr/',
+    title: 'notice-droit.fr',
+    image: '/portfolio/notice.webp',
+    tech: '/rails.svg',
+    header_logo: '/ruby.svg',
   },
   {
-    repo: "https://github.com/qroux/trust-test",
-    path: "https://trustpair-test.herokuapp.com/",
-    title: "Open Data",
-    image: "/portfolio/trust.png",
-    tech: "/rails.svg",
+    repo: 'https://github.com/qroux/trust-test',
+    path: 'https://trustpair-test.herokuapp.com/',
+    title: 'Open Data',
+    image: '/portfolio/trust.webp',
+    tech: '/rails.svg',
   },
   {
-    repo: "https://github.com/qroux/sinatra-test",
-    path: "https://skello-sinatra.herokuapp.com/",
-    title: "Sinatra Blog",
-    image: "/portfolio/skello.png",
-    tech: "/sinatra.svg",
+    repo: 'https://github.com/qroux/sinatra-test',
+    path: 'https://skello-sinatra.herokuapp.com/',
+    title: 'Sinatra Blog',
+    image: '/portfolio/skello.webp',
+    tech: '/sinatra.svg',
   },
 ];
 
 const mobileProjects = [
   {
-    lang: "Mobile - React Native",
-    repo: "https://github.com/qroux/remontada-app",
-    path: "https://expo.dev/@qoux/remontada-app",
-    title: "Remontada",
-    image: "/portfolio/remontada-2.jpg",
-    tech: "/expo.svg",
-    header_logo: "/react.svg",
+    lang: 'Mobile - React Native',
+    repo: 'https://github.com/qroux/remontada-app',
+    path: 'https://expo.dev/@qoux/remontada-app',
+    title: 'Remontada',
+    image: '/portfolio/remontada-2.webp',
+    tech: '/expo.svg',
+    header_logo: '/react.svg',
   },
 ];
 
@@ -81,7 +81,7 @@ const renderProjects = (projects) => {
                 src={projects[0].header_logo}
                 alt={projects[0].header_logo}
                 className={styles.row__heading__img}
-              />{" "}
+              />{' '}
               {projects[0].lang}
             </h3>
             <div className={styles.row__content}>
@@ -90,10 +90,9 @@ const renderProjects = (projects) => {
                   className={styles.item}
                   key={project.title}
                   variants={Animations.cardTransition}
-                  initial={"hidden"}
-                  animate={inView ? "visible" : ""}
-                  transition={{ duration: 0.25, delay: id * 0.25 }}
-                >
+                  initial={'hidden'}
+                  animate={inView ? 'visible' : ''}
+                  transition={{ duration: 0.25, delay: id * 0.25 }}>
                   <img
                     className={styles.item__photo}
                     src={project.image}
@@ -110,17 +109,20 @@ const renderProjects = (projects) => {
                       <a
                         className={styles.item__link}
                         href={project.path}
-                        target="_blank"
-                      >
+                        target='_blank'
+                        rel='noopener noreferrer'>
                         <h5 className={styles.item__heading}>
                           {project.title}
                         </h5>
                       </a>
                     </div>
-                    <a href={project.repo} target="_blank">
+                    <a
+                      href={project.repo}
+                      target='_blank'
+                      rel='noopener noreferrer'>
                       <img
-                        src="/github.svg"
-                        alt="github.svg"
+                        src='/github.svg'
+                        alt='github.svg'
                         className={styles.item__github}
                       />
                     </a>

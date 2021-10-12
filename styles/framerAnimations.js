@@ -15,6 +15,50 @@ export const Animations = {
       transition: { duration: 0.3 },
     },
   },
+  menuTransition: (reverse = false) => {
+    return {
+      initial: {
+        rotate: 0,
+      },
+      animate: {
+        rotate: reverse ? 45 : -45,
+      },
+    };
+  },
+  menuFade: {
+    initial: {
+      scale: 1,
+    },
+    animate: {
+      scale: 0,
+    },
+  },
+  menuModal: {
+    hidden: {
+      scaleX: 0,
+      transition: { ease: 'easeInOut', duration: 0.3 },
+    },
+    visible: {
+      scaleX: 1,
+      transition: { ease: 'easeInOut', duration: 0.3 },
+    },
+  },
+  chevronTransition: {
+    initial: {
+      opacity: 0,
+      top: '-10rem',
+    },
+    animate: {
+      opacity: 0.2,
+      top: '-15rem',
+      transition: { delay: 7 },
+    },
+    hover: {
+      translateY: '1.5rem',
+      scaleX: 0.8,
+      transition: { duration: 0.5 },
+    },
+  },
   sectionTransition: {
     hidden: {
       x: -10,
@@ -43,7 +87,7 @@ export const Animations = {
       translateX: '1rem',
       scaleY: 0,
       skew: '-30deg',
-      transition: { duration: 2, delay: 2, ease: 'easeIn' },
+      transition: { duration: 2, delay: 2, ease: 'easeInOut' },
     },
   },
   hiddenTextTransition: {
@@ -61,7 +105,7 @@ export const Animations = {
       translateX: '0rem',
       scaleY: 1,
       skew: 0,
-      transition: { duration: 2, delay: 2, ease: 'easeIn' },
+      transition: { duration: 2, delay: 2, ease: 'easeInOut' },
     },
   },
   hiddenTextBG: {

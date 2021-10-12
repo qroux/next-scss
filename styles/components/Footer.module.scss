@@ -1,6 +1,6 @@
-@import "../variables";
-@import "../animations";
-@import "../page";
+@import '../variables';
+@import '../animations';
+@import '../page';
 
 // <div className={styles.footerLayout}>
 // <div className={styles.footerContainer}>
@@ -23,7 +23,7 @@
   @include Container;
   text-align: center;
 
-  padding: 10rem 0;
+  padding: 30rem 0;
 }
 
 .footer__heading {

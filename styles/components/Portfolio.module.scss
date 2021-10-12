@@ -1,6 +1,6 @@
-@import "../variables";
-@import "../animations";
-@import "../page";
+@import '../variables';
+@import '../animations';
+@import '../page';
 
 .portfolio {
   &__layout {
@@ -29,6 +29,7 @@
 
     &__img {
       height: 5.5rem;
+      width: 5.5rem;
       margin-right: 2rem;
     }
   }
@@ -84,7 +85,7 @@
 
   &__logo {
     height: 5.5rem;
-    width: auto;
+    width: 5.5rem;
     margin-right: 3rem;
   }
 
@@ -94,7 +95,8 @@
   }
 
   &__github {
-    width: 6rem;
+    height: 5.5rem;
+    width: 5.5rem;
   }
 
   &__link {

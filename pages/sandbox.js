@@ -1,23 +1,23 @@
-import dynamic from 'next/dynamic';
-import { Suspense } from 'react';
-import { Canvas } from '@react-three/fiber';
-import { Physics } from '@react-three/cannon';
-import Box from '../components/3d/SpinningBox';
-import {
-  softShadows,
-  OrbitControls,
-  useProgress,
-  Html,
-} from '@react-three/drei';
+// import dynamic from 'next/dynamic';
+// import { Suspense } from 'react';
+// import { Canvas } from '@react-three/fiber';
+// import { Physics } from '@react-three/cannon';
+// import Box from '../components/3d/SpinningBox';
+// import {
+//   softShadows,
+//   OrbitControls,
+//   useProgress,
+//   Html,
+// } from '@react-three/drei';
 
-const Banana = dynamic(() => import('../components/3d/Banana'));
+// const Banana = dynamic(() => import('../components/3d/Banana'));
 
-softShadows();
+// softShadows();
 
-function Loader() {
-  const { active, progress, errors, item, loaded, total } = useProgress();
-  return <Html center>{progress} % loaded</Html>;
-}
+// function Loader() {
+//   const { active, progress, errors, item, loaded, total } = useProgress();
+//   return <Html center>{progress} % loaded</Html>;
+// }
 
 export default function sandbox() {
   return (
@@ -30,7 +30,7 @@ export default function sandbox() {
         boxSizing: 'border-box',
         minHeight: '70vh',
       }}>
-      <Canvas
+      {/* <Canvas
         shadows
         style={{ height: '60rem', width: '100%' }}
         colorManagement
@@ -54,14 +54,14 @@ export default function sandbox() {
           <Physics>
             <group>
               <Banana />
-              {/* <Box position={[-2, 1, -5]} speed={6} />
+              <Box position={[-2, 1, -5]} speed={6} />
           <Box
             position={[0, 1, 0]}
             size={[2, 2, 1]}
             color='royalblue'
             speed={2}
             reverse={true}
-          /> */}
+          />
               <Box position={[5, 1, -2]} color='greenyellow' speed={20} />
 
               <mesh
@@ -70,13 +70,13 @@ export default function sandbox() {
                 position={[0, -3, 0]}>
                 <planeBufferGeometry attach='geometry' args={[100, 100]} />
                 <shadowMaterial attach='material' opacity={0.3} />
-                {/* <meshStandardMaterial attach='material' color='lightgrey' /> */}
+                <meshStandardMaterial attach='material' color='lightgrey' />
               </mesh>
             </group>
           </Physics>
         </Suspense>
         <OrbitControls />
-      </Canvas>
+      </Canvas> */}
     </div>
   );
 }

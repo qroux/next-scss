@@ -9,13 +9,7 @@
 
   &__box {
     position: absolute;
-    top: -15rem;
-    opacity: 0;
-    animation-name: fadeIn;
-    animation-duration: 2s;
-    animation-delay: 8s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-in-out;
+    padding: 2rem;
 
     &:hover {
       cursor: pointer;
@@ -27,13 +21,12 @@
   &__layout {
     background-color: $bg-light-2;
     color: $text-dark;
-    // box-shadow: 0 1rem 2rem rgba(black, 0.1);
   }
 
   &__container {
     @include Container;
     // min-height: 50vh;
-    padding: $section-padding;
+    padding-bottom: 20rem;
   }
 
   &__header {
