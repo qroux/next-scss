@@ -1,4 +1,47 @@
 import styles from "../styles/components/PlanetSvg.module.scss";
+import { motion } from "framer-motion";
+
+const timer = 4.5;
+
+const Animations = {
+  planet: {
+    animate: {
+      translateY: "10vh",
+
+      transition: {
+        duration: timer,
+        ease: "easeInOut",
+        repeat: Infinity,
+        repeatType: "reverse",
+      },
+    },
+  },
+  frontMoons: {
+    animate: {
+      translateY: "5vh",
+      scale: 1.1,
+      transition: {
+        duration: timer,
+        ease: "easeInOut",
+        repeat: Infinity,
+        repeatType: "reverse",
+      },
+    },
+  },
+  backMoons: {
+    animate: {
+      translateY: "6vh",
+      scale: 0.9,
+      transition: {
+        duration: timer,
+        delay: 0.5,
+        ease: "easeInOut",
+        repeat: Infinity,
+        repeatType: "reverse",
+      },
+    },
+  },
+};
 
 export const PlanetSvg = () => {
   return (
@@ -20,7 +63,11 @@ export const PlanetSvg = () => {
             fill="#939393"
             fillOpacity="0.65"
           />
-          <g id={styles.backMoons}>
+          <motion.g
+            // id={styles.backMoons}
+            variants={Animations.backMoons}
+            animate={"animate"}
+          >
             <g id="Group">
               <path
                 id="Vector"
@@ -38,8 +85,12 @@ export const PlanetSvg = () => {
               d="M428.978 52.3102C443.423 52.3102 455.133 40.6002 455.133 26.1551C455.133 11.71 443.423 0 428.978 0C414.533 0 402.823 11.71 402.823 26.1551C402.823 40.6002 414.533 52.3102 428.978 52.3102Z"
               fill="url(#paint2_linear)"
             />
-          </g>
-          <g id={styles.planet}>
+          </motion.g>
+          <motion.g
+            // id={styles.planet}
+            variants={Animations.planet}
+            animate={"animate"}
+          >
             <path
               id="Vector_4"
               d="M264.001 462.761C385.372 462.761 483.762 364.37 483.762 243C483.762 121.629 385.372 23.2385 264.001 23.2385C142.63 23.2385 44.24 121.629 44.24 243C44.24 364.37 142.63 462.761 264.001 462.761Z"
@@ -82,8 +133,12 @@ export const PlanetSvg = () => {
               d="M82.3226 366.682C69.6331 362.456 60.6681 356.021 56.4818 347.708C52.2854 339.406 52.436 328.403 56.552 315.703C52.95 305.424 50.0998 294.81 48.0559 283.899C45.7569 271.679 44.4598 259.105 44.2741 246.262C35.3091 257.844 27.9885 269.275 22.3214 280.435C23.3223 286.267 24.5571 292.02 26.0128 297.684C28.7244 308.238 29.3026 319.181 28.4363 330.043C27.9002 336.762 28.8489 342.724 31.3637 347.707C38.2707 361.381 58.0479 369.954 86.0873 372.032C94.3496 372.655 103.315 372.705 112.882 372.153C112.882 372.143 112.882 372.143 112.882 372.143C101.205 371.401 90.9052 369.544 82.3226 366.682Z"
               fill="url(#paint10_linear)"
             />
-          </g>
-          <g id={styles.frontMoons}>
+          </motion.g>
+          <motion.g
+            // id={styles.frontMoons}
+            variants={Animations.frontMoons}
+            animate={"animate"}
+          >
             <g id="Group_3">
               <path
                 id="Vector_12"
@@ -113,7 +168,7 @@ export const PlanetSvg = () => {
               d="M34.1556 511.998C48.6006 511.998 60.3107 500.288 60.3107 485.843C60.3107 471.398 48.6006 459.688 34.1556 459.688C19.7105 459.688 8.00046 471.398 8.00046 485.843C8.00046 500.288 19.7105 511.998 34.1556 511.998Z"
               fill="url(#paint15_linear)"
             />
-          </g>
+          </motion.g>
         </g>
       </g>
       <defs>
