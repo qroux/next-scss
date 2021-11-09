@@ -7,11 +7,11 @@ import { Animations } from '../styles/framerAnimations';
 const jsProjects = [
   {
     lang: 'Javascript - Typescript',
-    repo: 'https://github.com/qroux/react-streaming',
-    path: 'https://react-stream-client.herokuapp.com/',
-    title: 'Twitch Copy',
-    image: '/portfolio/cursed-twitch.webp',
-    tech: '/react.svg',
+    repo: 'https://github.com/qroux/wing-foil',
+    path: 'https://wing-foil.vercel.app/',
+    title: 'Wing Foil',
+    image: '/portfolio/wing-foil.webp',
+    tech: '/next.svg',
     header_logo: '/javascript.svg',
   },
   {
@@ -27,6 +27,13 @@ const jsProjects = [
     title: 'Microservices',
     image: '/portfolio/ticketswapping.webp',
     tech: '/typescript.svg',
+  },
+  {
+    repo: 'https://github.com/qroux/react-streaming',
+    path: 'https://react-stream-client.herokuapp.com/',
+    title: 'Twitch Copy',
+    image: '/portfolio/cursed-twitch.webp',
+    tech: '/react.svg',
   },
 
   // { repo: "https://github.com/qroux/kickstart", path: "https://kickstarter-copy.herokuapp.com/", title: "Blockchain", image: "/portfolio/kickstarter.png", tech: "/eth.svg"},
