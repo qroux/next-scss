@@ -1,19 +1,19 @@
-import Head from 'next/head';
-import '../styles/global.scss';
-import styles from '../styles/Layout.module.scss';
+import Head from "next/head";
+import "../styles/global.scss";
+import styles from "../styles/Layout.module.scss";
 
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
         <title>Quentin Roux | Portfolio</title>
-        <link rel='icon' href='/favicon2.ico' />
+        <link rel="icon" href="/favicon2.ico" />
         <meta
-          name='description'
-          content='Quentin Roux - Développeur Fullstack Javascript/React/Vue et RubyOnRails - Paris/Marseille'
+          name="description"
+          content="Quentin Roux - Développeur Fullstack Typescript/React/React Native - Paris/Marseille"
         />
       </Head>
 
